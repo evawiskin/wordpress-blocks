@@ -1,0 +1,58 @@
+{
+    "key": "user",
+    "title": "User Details",
+    "fields": [
+        {
+            "key": "user_message_key",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Edit the details of this User",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "user_linked_person_key",
+			"label": "Linked Person",
+			"name": "user_linked_person",
+			"type": "post_object",
+			"instructions": "Select the Person Post that this User is linked to. Content from here will override that from the WordPress user profile for author information.",
+			"wrapper": {
+				"width": "50",
+				"class": "",
+				"id": ""
+			},
+			"post_type": [
+				"person"
+			]
+        }
+    ],
+	"location": [
+		[
+			{
+				"param": "user_form",
+				"operator": "==",
+				"value": "all"
+			}
+		]
+	],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

@@ -1,0 +1,99 @@
+{
+    "key": "option_not_found",
+    "title": "404 Not Found",
+    "fields": [
+        {
+            "key": "option_not_found_message_key",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Edit the messaging and links that appear on the 404 template. This template is served when a user navigates to a URL on the site that does not exist.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "option_not_found_title_key",
+            "label": "404 Title",
+            "name": "option_not_found_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Add a title for the 404 page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "option_not_found_description_key",
+            "label": "404 Description",
+            "name": "option_not_found_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Add a description for the 404 page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "3",
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "option_not_found_link_key",
+            "label": "404 Link",
+            "name": "option_not_found_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "hy-not-found-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

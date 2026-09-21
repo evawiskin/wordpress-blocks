@@ -1,0 +1,23 @@
+{
+    "key": "taxonomy_client",
+    "title": "Client Fields",
+    "fields": [
+		{
+            "key": "taxonomy_client_image_key",
+            "label": "Client Image",
+            "name": "taxonomy_client_image",
+            "type": "image",
+            "return_format": "id",
+            "instructions": "Select the client image to display in the clients carousel block. It is recommended to use a small, logo-style image no larger than 200x200 pixels. Use an SVG for better results (png/jpg images will look grainy when scaled)."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "client"
+            }
+        ]
+    ]
+}

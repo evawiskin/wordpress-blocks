@@ -1,0 +1,201 @@
+{
+    "key": "option_header",
+    "title": "Header",
+    "fields": [
+        {
+            "key": "option_header_message_key",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Edit the various fields that appear in the header.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "option_header_menus_tab_key",
+            "label": "Menus",
+            "name": "option_header_menus_tab",
+            "type": "tab"
+        },
+        {
+            "key": "option_header_primary_menu_key",
+            "label": "Primary Header Menu",
+            "name": "option_header_primary_menu",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "45%"
+            },
+            "choices": []
+        },
+        {
+            "key": "option_header_mobile_menu_key",
+            "label": "Mobile Header Menu",
+            "name": "option_header_mobile_menu",
+            "aria-label": "",
+            "type": "select",
+            "wrapper": {
+                "width": "45%"
+            },
+            "choices": []
+        },
+        {
+            "key": "option_header_megamenu_repeater_key",
+            "label": "Mega Menus",
+            "name": "option_header_megamenu_repeater",
+            "type": "repeater",
+            "instructions": "Configure header mega-menus. Choose which nav menus to appear in the mega-menu and which top-level nav item should open it.",
+            "layout": "block",
+            "button_label": "Add Menu",
+            "sub_fields": [
+                {
+                    "key": "option_header_megamenu_repeater_accordion_key",
+                    "label": "Mega Menu",
+                    "name": "option_header_megamenu_repeater_accordion",
+                    "type": "accordion",
+                    "open": 1
+                },
+                {
+                    "key": "option_header_megamenu_trigger_menu_item_key",
+                    "label": "Trigger Menu Item",
+                    "name": "option_header_megamenu_trigger_menu_item",
+                    "type": "select",
+                    "ui": 1,
+                    "instructions": "Select the top-level menu item that will trigger the mega-menu.",
+                    "wrapper": {
+                        "width": "25%"
+                    }
+                },
+                {
+                    "key": "option_header_megamenu_cta_key",
+                    "label": "Mega Menu CTA (Call-To-Action)",
+                    "name": "option_header_megamenu_cta",
+                    "instructions": "Add an additional CTA link that will display at the bottom of the mega-menu",
+                    "type": "link",
+                    "wrapper": {
+                        "width": "25%"
+                    }
+                },
+                {
+                    "key": "option_header_megamenu_nav_menus_repeater_key",
+                    "label": "Add Mega Menu Sub Menus",
+                    "name": "option_header_megamenu_nav_menus_repeater",
+                    "type": "repeater",
+                    "sub_fields": [
+                        {
+                            "key": "option_header_megamenu_nav_menus_select_key",
+                            "label": "Nav Menus",
+                            "name": "option_header_megamenu_nav_menus_select",
+                            "type": "select",
+                            "multiple": 0,
+                            "ui": 1
+                        },
+                        {
+                            "key": "option_header_megamenu_sub_menu_layout_key",
+                            "label": "Layout",
+                            "name": "option_header_megamenu_sub_menu_layout",
+                            "type": "true_false",
+                            "ui": 1,
+                            "ui_on_text": "Detailed",
+                            "ui_off_text": "Regular"
+                        }
+                    ],
+                    "wrapper": {
+                        "width": "50%"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "option_header_ctas_tab_key",
+            "label": "CTAs",
+            "name": "option_header_ctas_tab",
+            "type": "tab"
+        },
+        {
+            "key": "option_header_ctas_key",
+            "label": "CTAs",
+            "name": "option_header_ctas",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add up to 2 CTAs here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "min": 0,
+            "max": 2,
+            "layout": "block",
+            "button_label": "Add CTA",
+            "sub_fields": [
+                {
+                    "key": "option_header_ctas_link_key",
+                    "label": "Link",
+                    "name": "option_header_ctas_link",
+                    "aria-label": "",
+                    "type": "link"
+                },
+                {
+                    "key": "option_header_ctas_style_key",
+                    "label": "Style",
+                    "name": "option_header_ctas_style",
+                    "aria-label": "",
+                    "type": "select",
+                    "wrapper": {
+                        "width": "40%"
+                    }
+                },
+                {
+                    "key": "option_header_ctas_icon_key",
+                    "label": "Icon",
+                    "name": "option_header_ctas_icon",
+                    "aria-label": "",
+                    "type": "select",
+                    "wrapper": {
+                        "width": "40%"
+                    }
+                },
+                {
+                    "key": "option_header_ctas_hide_mobile_key",
+                    "label": "Hide on mobile?",
+                    "name": "option_header_ctas_hide_mobile",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "default_value": false,
+                    "wrapper": {
+                        "width": "20%"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "hy-header-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

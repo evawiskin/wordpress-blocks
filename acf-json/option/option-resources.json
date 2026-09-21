@@ -1,0 +1,14 @@
+{
+    "key": "option_resources",
+    "title": "Resources Settings",
+    "fields": [],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "hy-resources-settings"
+            }
+        ]
+    ]
+}

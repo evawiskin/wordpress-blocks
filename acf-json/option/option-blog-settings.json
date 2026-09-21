@@ -1,0 +1,98 @@
+{
+    "key": "option_blog_settings",
+    "title": "Blog Settings",
+    "fields": [
+        {
+            "key": "option_blog_settings_post_filter_tab_key",
+            "label": "Post Filter",
+            "name": "option_blog_settings_post_filter_tab",
+            "type": "tab"
+        },
+            {
+                "key": "post_filter_archive_title_key",
+                "label": "Blog posts archive Title",
+                "name": "post_filter_archive_title",
+                "type": "text",
+                "wrapper": {
+                    "width": "100%"
+                }
+            },
+            {
+                "key": "post_filter_taxonomy_title_key",
+                "label": "Post Filter Taxonomy Title",
+                "name": "post_filter_taxonomy_title",
+                "type": "text",
+                "wrapper": {
+                    "width": "50%",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "post_filter_search_title_key",
+                "label": "Post Filter Search Title",
+                "name": "post_filter_search_title",
+                "type": "text",
+                "wrapper": {
+                    "width": "50%",
+                    "class": "",
+                    "id": ""
+                }
+            },
+        {
+            "key": "option_blog_settings_post_cta_tab_key",
+            "label": "Post CTA",
+            "name": "option_blog_settings_post_cta_tab",
+            "type": "tab"
+        },
+            {
+                "key": "option_blog_settings_post_cta_title_key",
+                "label": "Post CTA Title",
+                "name": "option_blog_settings_post_cta_title",
+                "type": "text"
+            },
+            {
+                "key": "option_blog_settings_post_cta_text_key",
+                "label": "Post CTA Text",
+                "name": "option_blog_settings_post_cta_text",
+                "type": "textarea"
+            },
+            {
+                "key": "option_blog_settings_post_cta_link_key",
+                "name": "option_blog_settings_post_cta_link",
+                "type": "link",
+                "label": "Button Link"
+            },
+        {
+            "key": "option_blog_settings_related_posts_tab_key",
+            "label": "Related Posts",
+            "name": "option_blog_settings_related_posts_tab",
+            "type": "tab"
+        },
+            {
+                "key": "option_blog_settings_related_posts_title_key",
+                "label": "Related Posts Title",
+                "name": "option_blog_settings_related_posts_title",
+                "type": "text"
+            }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "hy-blog-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1691662098
+}

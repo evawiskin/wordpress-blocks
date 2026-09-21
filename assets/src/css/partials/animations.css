@@ -1,0 +1,44 @@
+/* Utility class for rotating the cog. */
+
+.origin-unset {
+	transform-origin: unset !important;
+}
+
+/* Asterisk rotate for 404 page. */
+.asterisk-rotate {
+	animation: asterisk-rotate 4s ease-out 0s infinite normal none;
+}
+@keyframes asterisk-rotate {
+	0% {
+		transform:rotate(0);
+	}
+	5% {
+		transform:rotate(72deg);
+	}
+	10% {
+		transform:rotate(72deg);
+	}
+	55% {
+		transform:rotate(288deg);
+	}
+	90% {
+		transform:rotate(360deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+
+/* Linear asterisk rotate */
+.asterisk-rotate-linear {
+	animation: asterisk-rotate-linear 8s linear 0s infinite normal none;
+}
+
+@keyframes asterisk-rotate-linear {
+	0% {
+		transform:rotate(0);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}

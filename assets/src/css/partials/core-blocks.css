@@ -1,0 +1,73 @@
+/* Core Image Block */
+.wp-block-image {
+	@apply relative m-0;
+}
+.wp-block-image:not(:last-child) {
+	@apply mb-5;
+}
+.wp-block-image img {
+	@apply max-w-full w-full rounded;
+}
+.wp-block-image figcaption {
+	@apply mt-4 pl-7 text-forest-green-500;
+}
+.wp-block-image figcaption:before {
+	content: url("data:image/svg+xml,%3Csvg fill='#005050' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 13'%3E%3Cpath d='m11.42 6.218-1.159 1.17-3.505-3.505V12.4H5.062V3.883l-3.5 3.506-1.164-1.17L5.909.706l5.512 5.511Z' /%3E%3C/svg%3E");
+	@apply absolute bottom-2.5 left-1 w-3.5 h-3.5;
+}
+
+/* Core Embed Block */
+.wp-block-embed {
+	@apply aspect-w-16 aspect-h-9;
+}
+.wp-block-embed iframe {
+	@apply w-full h-full;
+}
+
+/* Core Table Block */
+.wp-block-table {
+	@apply mb-5;
+}
+.wp-block-table table,
+.wp-block-table table td,
+.wp-block-table table th {
+	@apply border-black/30 py-3 px-4;
+}
+.wp-block-table table thead,
+.wp-block-table table tfoot {
+	@apply font-bold border-0;
+}
+.wp-block-table:not(.is-style-stripes) table thead,
+.wp-block-table:not(.is-style-stripes) table tfoot {
+	@apply bg-black/5;
+}
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	@apply bg-black/5;
+}
+
+/* Core Separator Block */
+.wp-block-separator {
+	@apply relative m-0 my-8 border-0 h-1.5 w-full max-w-sm bg-current;
+}
+
+/* Core Quote Block */
+.wp-block-quote {
+	@apply m-0 py-2 border-l-8 border-flamingo-pink-500 pl-5;
+}
+.wp-block-quote :is(h1, h2, h3, h4, h5, h6, p):not(has-text-color) {
+	@apply text-forest-green-500;
+}
+.wp-block-quote :is(h1, h2, h3, h4, h5, h6, p):not([class*="-heading-"], [class*="-font-size"]) {
+	@apply heading-primary theme-heading-mini;
+}
+.wp-block-quote cite {
+	@apply mt-8 text-base not-italic;
+}
+
+/* Custom List Block */
+.custom-list-block > li {
+	@apply flex flex-row gap-3 items-center;
+}
+.custom-list-block > li:not(:last-child) {
+	@apply mb-3.5;
+}

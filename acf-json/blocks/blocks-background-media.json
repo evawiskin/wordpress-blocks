@@ -1,0 +1,80 @@
+{
+    "key": "background_media_key",
+    "title": "Background Media",
+    "fields": [
+        {
+            "key": "background_media_tab_key",
+            "label": "Background Media",
+            "type": "tab"
+        },
+        {
+			"key": "background_media_background_type_key",
+            "label": "Background Type",
+            "name": "background_media_background_type",
+            "type": "true_false",
+			"ui" : true,
+			"ui_off_text" : "Image",
+			"ui_on_text" : "Video"
+		},
+        {
+            "key": "background_media_desktop_image_id_key",
+            "label": "Background Image (Desktop - 1024px and up)",
+            "name": "background_media_desktop_image_id",
+            "instructions": "It is recommended to use a large image (at least 1920px wide) for best results.",
+            "return_format": "id",
+            "type": "image",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "background_media_background_type_key",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "background_media_mobile_image_id_key",
+            "label": "Background Image (Mobile - under 1024px)",
+            "name": "background_media_mobile_image_id",
+            "instructions": "Optionally render a separate image for smaller screens. For best results choose a portrait image to better fit long-narrow screens.",
+            "type": "image",
+			"return_format": "id",
+			"conditional_logic": [
+                [
+                    {
+                        "field": "background_media_background_type_key",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "background_media_background_video_file_key",
+            "label": "Background Video",
+            "name": "background_media_background_video_file",
+            "type": "file",
+			"mime_types": "mp4, mov",
+			"conditional_logic": [
+                [
+                    {
+                        "field": "background_media_background_type_key",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield/columns2"
+            }
+        ]
+    ],
+    "menu_order": 999
+}

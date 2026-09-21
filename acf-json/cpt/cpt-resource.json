@@ -1,0 +1,134 @@
+{
+    "key": "cpt_resource",
+    "title": "Resource Details",
+    "fields": [
+        {
+            "key": "cpt_resource_description_intro_key",
+            "label": "Description Intro",
+            "name": "cpt_resource_description_intro",
+            "type": "textarea",
+            "instructions": "The introduction for the description shown on the listing page in larger bold text.",
+            "required": 1,
+            "rows": 3,
+            "new_lines": "br"
+        },
+        {
+            "key": "cpt_resource_description_key",
+            "label": "Description",
+            "name": "cpt_resource_description",
+            "type": "wysiwyg",
+            "instructions": "The full description shown on the listing page alongside this resource card. Supports bold, lists, etc.",
+            "required": 1,
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "cpt_resource_subtitle_key",
+            "label": "Subtitle",
+            "name": "cpt_resource_subtitle",
+            "type": "text",
+            "instructions": "Short subtitle shown below the title on the resource card. E.g. 'A founder's roadmap to trust and traction'",
+            "required": 0
+        },
+        {
+            "key": "cpt_resource_cover_image_key",
+            "label": "Cover Image",
+            "name": "cpt_resource_cover_image",
+            "type": "image",
+            "return_format": "id",
+            "instructions": "The cover/preview image displayed inside the coloured resource card.",
+            "required": 1,
+            "preview_size": "medium"
+        },
+        {
+            "key": "cpt_resource_accent_colour_key",
+            "label": "Card Background Colour",
+            "name": "cpt_resource_accent_colour",
+            "type": "select",
+            "instructions": "Background colour for the resource card.",
+            "required": 1,
+            "choices": {
+                "forest-green-500": "Forest Green",
+                "forest-green-600": "Dark Forest Green",
+                "deep-ocean-blue-500": "Deep Ocean Blue",
+                "sky-blue-500": "Sky Blue",
+                "electric-green-500": "Electric Green",
+                "sunshine-yellow-500": "Sunshine Yellow",
+                "flamingo-pink-500": "Flamingo Pink",
+                "purple-500": "Purple",
+                "black": "Black",
+                "white": "White",
+                "neutral-500": "Neutral",
+                "gretter-50": "Gretter 50",
+                "gretter-100": "Gretter 100"
+            },
+            "default_value": "forest-green-500",
+            "return_format": "value",
+            "wrapper": {
+                "width": "50%"
+            }
+        },
+        {
+            "key": "cpt_resource_text_colour_key",
+            "label": "Card Text Colour",
+            "name": "cpt_resource_text_colour",
+            "type": "select",
+            "instructions": "Text colour for the resource card title and subtitle.",
+            "required": 1,
+            "choices": {
+                "white": "White",
+                "black": "Black",
+                "forest-green-500": "Forest Green",
+                "forest-green-600": "Dark Forest Green",
+                "deep-ocean-blue-500": "Deep Ocean Blue",
+                "electric-green-500": "Electric Green"
+            },
+            "default_value": "white",
+            "return_format": "value",
+            "wrapper": {
+                "width": "50%"
+            }
+        },
+        {
+            "key": "cpt_resource_file_key",
+            "label": "Download File",
+            "name": "cpt_resource_file",
+            "type": "file",
+            "instructions": "Upload the file users will receive after submitting the gated access form.",
+            "required": 1,
+            "return_format": "url",
+            "library": "all"
+        },
+        {
+            "key": "cpt_resource_button_text_key",
+            "label": "Download Button Text",
+            "name": "cpt_resource_button_text",
+            "type": "text",
+            "instructions": "Text shown on the download button after form submission.",
+            "default_value": "Download free guide",
+            "required": 0
+        },
+        {
+            "key": "cpt_resource_gform_id_key",
+            "label": "Gated Download Form",
+            "name": "cpt_resource_gform_id",
+            "type": "select",
+            "instructions": "Select the Gravity Form used for this resource's gated download.",
+            "required": 1,
+            "choices": [],
+            "allow_null": 1,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "resource"
+            }
+        ]
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "key": "option_api_keys",
+    "title": "API Keys",
+    "fields": [
+        {
+            "key": "option_api_keys_message_key",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Store or change the various keys needed for API usage on this site.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "option_api_keys_gtm_id_key",
+            "label": "Google Tag Manager ID",
+            "name": "option_api_keys_gtm_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Add Google Tag Manager ID",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "option_api_keys_google_maps_key_key",
+            "label": "Google Maps API Key",
+            "name": "option_api_keys_google_maps_key",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Add Google Maps API Key",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "AIzaSyD7-PSX4yNK7t7MXPB3zZ6gIHUWL6L1Bsw",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "hy-api-keys-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

@@ -1,0 +1,252 @@
+{
+    "key": "option_cookie_popup",
+    "title": "Cookie Popup Settings",
+    "fields": [
+        {
+            "key": "option_cookie_popup_enabled_key",
+            "label": "Show Cookie Popup",
+            "name": "option_cookie_popup_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "option_cookie_popup_message_key",
+            "type": "message",
+            "message": "Customise the cookie popup content below"
+        },
+        {
+            "key": "option_cookie_popup_title_key",
+            "label": "Title",
+            "name": "option_cookie_popup_title",
+            "type": "text",
+            "default_value": "We use cookies!"
+        },
+        {
+            "key": "option_cookie_popup_description_key",
+            "label": "Description",
+            "name": "option_cookie_popup_description",
+            "type": "textarea",
+            "default_value": "This website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent.",
+            "instructions": "the choose options link will append to this text"
+        },
+        {
+            "key": "option_cookie_popup_choose_options_link_text_key",
+            "label": "Choose Options Link Text",
+            "name": "option_cookie_popup_choose_options_link_text",
+            "type": "text",
+            "default_value": "Let me choose"
+        },
+        {
+            "key": "option_cookie_popup_options_title_key",
+            "label": "Options Title",
+            "name": "option_cookie_popup_options_title",
+            "type": "text",
+            "default_value": "Cookie preferences"
+        },
+        {
+            "key": "option_cookie_popup_options_heading_key",
+            "label": "Options Heading",
+            "name": "option_cookie_popup_options_heading",
+            "type": "text",
+            "default_value": "Cookie usage"
+        },
+        {
+            "key": "option_cookie_popup_options_description_key",
+            "label": "Options Description",
+            "name": "option_cookie_popup_options_description",
+            "type": "textarea",
+            "default_value": "We use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full",
+            "instructions": "the privacy policy link will append to this text"
+        },
+        {
+            "key": "option_cookie_popup_options_privacy_policy_link_key",
+            "label": "Privacy Policy Link",
+            "name": "option_cookie_popup_options_privacy_policy_link",
+            "type": "link",
+            "default_value": {
+                "url": "/privacy-policy",
+                "title": "privacy policy"
+            }
+        },
+        {
+            "key": "option_cookie_popup_contact_heading_key",
+            "label": "Contact Heading",
+            "name": "option_cookie_popup_contact_heading",
+            "type": "text",
+            "default_value": "More information"
+        },
+        {
+            "key": "option_cookie_popup_contact_description_key",
+            "label": "Contact Description",
+            "name": "option_cookie_popup_contact_description",
+            "type": "textarea",
+            "default_value": "For any queries in relation to our policy on cookies and your choices, please",
+            "instructions": "the contact link will append to this text"
+        },
+        {
+            "key": "option_cookie_popup_contact_link_key",
+            "label": "Contact Link",
+            "name": "option_cookie_popup_contact_link",
+            "type": "link",
+            "default_value": {
+                "url": "/contact",
+                "title": "contact us"
+            }
+        },
+        {
+            "key": "option_cookie_popup_necessary_title_key",
+            "label": "Necessary Cookies Title",
+            "name": "option_cookie_popup_necessary_title",
+            "type": "text",
+            "default_value": "Necessary Cookies"
+        },
+        {
+            "key": "option_cookie_popup_necessary_description_key",
+            "label": "Necessary Cookies Description",
+            "name": "option_cookie_popup_necessary_description",
+            "type": "textarea",
+            "default_value": "These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly"
+        },
+        {
+            "key": "option_cookie_popup_analytics_title_key",
+            "label": "Analytics Cookies Title",
+            "name": "option_cookie_popup_analytics_title",
+            "type": "text",
+            "default_value": "Performance & Analytics Cookies"
+        },
+        {
+            "key": "option_cookie_popup_analytics_description_key",
+            "label": "Analytics Cookies Description",
+            "name": "option_cookie_popup_analytics_description",
+            "type": "textarea",
+            "default_value": "These cookies allow the website to remember the choices you have made in the past"
+        },
+        {
+            "key": "option_cookie_popup_analytics_table_key",
+            "label": "Analytics Cookies Table",
+            "name": "option_cookie_popup_analytics_table",
+            "type": "repeater",
+            "instructions": "Add the analytics cookies you want to display in the table",
+            "layout": "block",
+            "button_label": "Add Cookie",
+            "sub_fields": [
+                {
+                    "key": "option_cookie_popup_analytics_table_col1_key",
+                    "label": "Cookie Name",
+                    "name": "option_cookie_popup_analytics_table_col1",
+                    "type": "text"
+                },
+                {
+                    "key": "option_cookie_popup_analytics_table_col2_key",
+                    "label": "Cookie Domain",
+                    "name": "option_cookie_popup_analytics_table_col2",
+                    "type": "text"
+                },
+                {
+                    "key": "option_cookie_popup_analytics_table_col3_key",
+                    "label": "Cookie Expiration",
+                    "name": "option_cookie_popup_analytics_table_col3",
+                    "type": "text"
+                },
+                {
+                    "key": "option_cookie_popup_analytics_table_col4_key",
+                    "label": "Cookie Description",
+                    "name": "option_cookie_popup_analytics_table_col4",
+                    "type": "textarea"
+                }
+            ]
+        },
+        {
+            "key": "option_cookie_popup_targeting_title_key",
+            "label": "Targeting Cookies Title",
+            "name": "option_cookie_popup_targeting_title",
+            "type": "text",
+            "default_value": "Advertisement & Targeting Cookies"
+        },
+        {
+            "key": "option_cookie_popup_targeting_description_key",
+            "label": "Targeting Cookies Description",
+            "name": "option_cookie_popup_targeting_description",
+            "type": "textarea",
+            "default_value": "These cookies collect information about how you use the website, which pages you visited and which links you clicked on. All of the data is anonymized and cannot be used to identify you"
+        },
+        {
+            "key": "option_cookie_popup_targeting_table_key",
+            "label": "Analytics Cookies Table",
+            "name": "option_cookie_popup_targeting_table",
+            "type": "repeater",
+            "instructions": "Add the analytics cookies you want to display in the table",
+            "layout": "block",
+            "button_label": "Add Cookie",
+            "sub_fields": [
+                {
+                    "key": "option_cookie_popup_targeting_table_col1_key",
+                    "label": "Cookie Name",
+                    "name": "option_cookie_popup_targeting_table_col1",
+                    "type": "text"
+                },
+                {
+                    "key": "option_cookie_popup_targeting_table_col2_key",
+                    "label": "Cookie Domain",
+                    "name": "option_cookie_popup_targeting_table_col2",
+                    "type": "text"
+                },
+                {
+                    "key": "option_cookie_popup_targeting_table_col3_key",
+                    "label": "Cookie Expiration",
+                    "name": "option_cookie_popup_targeting_table_col3",
+                    "type": "text"
+                },
+                {
+                    "key": "option_cookie_popup_targeting_table_col4_key",
+                    "label": "Cookie Description",
+                    "name": "option_cookie_popup_targeting_table_col4",
+                    "type": "textarea"
+                }
+            ]
+        },
+        {
+            "key": "option_cookie_show_edit_button_key",
+            "label": "Show Edit Cookie Preferences Button",
+            "name": "option_cookie_show_edit_button",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1,
+            "instructions": "If enabled, a button will show which will allow the user to change their cookie preferences at any time"
+        },
+        {
+            "key": "option_cookie_edit_button_text_key",
+            "label": "Edit Cookie Preferences Button Text",
+            "name": "option_cookie_edit_button_text",
+            "type": "text",
+            "default_value": "Cookie Preferences",
+            "conditional_logic": [
+                {
+                    "field": "option_cookie_edit_button_key",
+                    "operator": "==",
+                    "value": "1"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "hy-cookie-popup-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

@@ -1,0 +1,38 @@
+{
+    "key": "container_settings_key",
+    "title": "Container Settings",
+    "fields": [
+        {
+            "key": "container_settings_tab_key",
+            "label": "Container Settings",
+            "type": "tab"
+        },
+        {
+            "key": "container_settings_width_key",
+            "label": "Container Width",
+            "name": "container_settings_width",
+            "type": "select",
+            "instructions": "This controls the maximum width of the content within this block.",
+            "choices": {},
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield/container"
+            }
+        ]
+    ],
+    "menu_order": 99,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

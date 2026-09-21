@@ -1,0 +1,154 @@
+{
+    "key": "cpt_work",
+    "title": "Work Details",
+    "fields": [
+		{
+			"key": "cpt_work_statistics_key",
+			"label": "Work Statistics",
+			"name": "cpt_work_statistics",
+			"type": "tab"
+		},
+		{
+			"key": "cpt_work_title_key",
+			"label": "Title",
+			"name": "cpt_work_title",
+			"type": "text",
+			"instructions": "Enter the title of the work item - this will appear as the title on the card and in the banner on the detail page.",
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_work_highlight_statistic_key",
+			"label": "Highlight Statistic",
+			"name": "cpt_work_highlight_statistic",
+			"type": "text",
+			"instructions": "Enter the statistic you want to highlight. This will be displayed in the card.",
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_work_company_size_key",
+			"label": "Company Size",
+			"name": "cpt_work_company_size",
+			"type": "text",
+			"instructions": "Enter the company size. Eg. SME",
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_work_budget_key",
+			"label": "Budget",
+			"name": "cpt_work_budget",
+			"type": "text",
+			"instructions": "Enter the budget. Eg. £15k - £20k",
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_work_url_key",
+			"label": "URL",
+			"name": "cpt_work_url",
+			"type": "url",
+			"instructions": "Enter the URL of the work item. Eg. https://thewave.com",
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_work_images_video_key",
+			"label": "Images and Video",
+			"name": "cpt_work_images_video",
+			"type": "tab"
+		},
+		{
+			"key": "cpt_work_video_key",
+			"label": "Video",
+			"name": "cpt_work_video",
+			"type": "oembed",
+			"instructions": "Enter the URL of the video you want to display on the detail page. This displays prominently at the top of the page."
+		},
+		{
+			"key": "cpt_work_card_image_key",
+			"label": "Card Image",
+			"name": "cpt_work_card_image",
+			"type": "image",
+			"return_format": "id",
+			"instructions": "Select the image that will be used on the card. Note this should be a transparent PNG for best results.",
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_work_card_image_2_key",
+			"label": "Card Image 2",
+			"name": "cpt_work_card_image_2",
+			"type": "image",
+			"return_format": "id",
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_work_card_image_3_key",
+			"label": "Card Image 3",
+			"name": "cpt_work_card_image_3",
+			"type": "image",
+			"return_format": "id",
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_work_visibility_key",
+			"label": "Work Visibility",
+			"name": "cpt_work_visibility",
+			"type": "tab"
+		},
+		{
+			"key": "cpt_work_hide_from_archive_key",
+			"label": "Hide from Archive",
+			"name": "cpt_work_hide_from_archive",
+			"type": "true_false",
+			"ui": 1,
+			"instructions": "Select this option to hide the work item from the archive page.",
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_work_hide_single_page_key",
+			"label": "Hide Single page",
+			"name": "cpt_work_hide_single_page",
+			"type": "true_false",
+			"ui": 1,
+			"instructions": "Select this option to hide the work items single page. This will throw a 404 on the detail page and serve a url in the industries block instead.",
+			"wrapper": {
+				"width": "50%"
+			}
+
+		}
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "work"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

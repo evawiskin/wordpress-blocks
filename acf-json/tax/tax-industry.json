@@ -1,0 +1,33 @@
+{
+    "key": "tax_industry",
+    "title": "Industry fields",
+    "fields": [
+		{
+            "key": "tax_industry_max_items_to_show_key",
+            "label": "Max items to show in blocks",
+            "name": "tax_industry_max_items_to_show",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "How many works should be displayed related with this industry (set 0 to skip limitation)"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "industry"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

@@ -1,0 +1,80 @@
+{
+    "key": "option_our_process",
+    "title": "Our process items",
+    "fields": [
+        {
+            "key": "option_our_process_repeater_key",
+            "label": "Processes",
+            "name": "option_our_process_repeater",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add process",
+            "wrapper": {
+                "width": "100"
+            },
+            "sub_fields": [
+                {
+					"key": "option_our_process_repeater_accordion_key",
+					"name": "option_our_process_repeater_accordion",
+					"type": "accordion",
+					"label": "Process"
+				},
+                {
+                    "key": "option_our_process_repeater_color_key",
+                    "label": "Lead color",
+                    "name": "option_our_process_repeater_color",
+                    "aria-label": "",
+                    "type": "select",
+                    "choices": [],
+                    "instructions": "Select lead color which we use in the card",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "option_our_process_repeater_icon_key",
+                    "label": "Icon",
+                    "name": "option_our_process_repeater_icon",
+                    "aria-label": "",
+                    "type": "select",
+                    "choices": [],
+                    "instructions": "Select icon which we use in the card",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "option_our_process_repeater_heading_key",
+                    "label": "Heading",
+                    "name": "option_our_process_repeater_heading",
+                    "type": "text"
+                },
+                {
+                    "key": "option_our_process_repeater_desc_key",
+                    "label": "Description",
+                    "name": "option_our_process_repeater_desc",
+                    "type": "textarea"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "hy-our-process"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

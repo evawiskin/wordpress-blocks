@@ -1,0 +1,159 @@
+/* 
+	Core Button Styles
+*/
+
+
+.hy-button-primary, .hy-button-outline, .hy-button-outline-forest, .hy-button-secondary, .hy-button-outline-neutral, .hy-button-tertiary,
+.wp-block-button {
+	@apply 
+		relative
+		cursor-pointer select-none 
+		inline-flex items-center justify-center gap-2
+		rounded-xl 
+		py-3 px-4 md:px-6 
+		border-solid border-2 !no-underline
+		transition-colors duration-200
+		!font-extrabold text-center leading-none
+		font-area-normal
+}
+
+.is-layout-flex.wp-block-buttons {
+	@apply gap-4;
+}
+.wp-block-button { 
+	@apply p-0;
+}
+.wp-block-button .wp-block-button__link {
+	@apply block w-full !bg-transparent !py-3 !px-5 !text-current rounded-none;
+}
+
+.hy-button-transparent {
+	@apply bg-transparent text-current border-transparent;
+}
+
+/* 
+	Primary Button Styles
+*/
+
+.hy-button-primary,
+.wp-block-button.is-style-button-primary {
+	@apply bg-electric-green-500 border-electric-green-500 hover:bg-white !text-forest-green-500 focus-visible:!outline-electric-green-500;
+}
+
+/* 
+	Outline Button Styles
+*/
+
+.hy-button-outline,
+.wp-block-button.is-style-button-outline {
+	@apply bg-forest-green-500 text-white border-electric-green-500 hover:border-white hover:!text-white focus-visible:!outline-electric-green-500;
+}
+
+/*
+	Outline Forest Button Styles
+*/
+
+.hy-button-outline-forest {
+	@apply bg-transparent text-forest-green-500 border-forest-green-500 hover:bg-forest-green-500 hover:text-white focus-visible:!outline-forest-green-500;
+}
+
+/*
+	Secondary Button Styles
+*/
+
+.hy-button-secondary,
+.wp-block-button.is-style-button-secondary {
+	@apply bg-sunshine-yellow-500 border-sunshine-yellow-500 !text-black hover:bg-white hover:!text-black focus-visible:!outline-sunshine-yellow-500;
+}
+
+/* 
+	Secondary Button Styles
+*/
+
+.hy-button-outline-neutral,
+.wp-block-button.is-style-button-secondary {
+	@apply !text-black bg-gretter-50 border-flamingo-pink-500 hover:border-black focus-visible:!outline-flamingo-pink-500;
+}
+
+/* 
+	Tertiary Button Styles
+*/
+
+.hy-button-tertiary,
+.wp-block-button.is-style-button-tertiary {
+	@apply bg-sunshine-yellow-500 border-sunshine-yellow-500 !text-black hover:bg-white focus-visible:!outline-sunshine-yellow-500;
+}
+
+/*
+	Standard Link
+*/
+.hy-button-link, .hy-button-link-sm {
+	@apply flex items-center gap-4 font-semibold hover:underline;
+}
+.hy-button-link-sm {
+	@apply text-xs;
+}
+
+
+/*
+	Support for arrows/chevrons in buttons, not currently hooked up with Gutenberg but visually correct
+*/
+
+/* Chevron Right - Black text */
+.hy-button-primary.has-chevron-right::after,
+.hy-button-tertiary.has-chevron-right::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#001313' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-right'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3Cpolyline points='12 5 19 12 12 19'%3E%3C/polyline%3E%3C/svg%3E");
+	@apply transform transition-all h-6 w-6 block duration-300 pointer-events-none relative top-px;
+}
+
+.hy-button-primary.has-chevron-right:hover::after,
+.hy-button-tertiary.has-chevron-right:hover::after,
+.hy-button-secondary.has-chevron-right:hover::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#001313' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-right'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3Cpolyline points='12 5 19 12 12 19'%3E%3C/polyline%3E%3C/svg%3E");
+	@apply translate-x-1;
+}
+
+/* Chevron Right - White text */
+.hy-button-outline.has-chevron-right::after,
+.hy-button-secondary.has-chevron-right::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-right'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3Cpolyline points='12 5 19 12 12 19'%3E%3C/polyline%3E%3C/svg%3E");
+	@apply transform transition-all h-6 w-6 block duration-300 pointer-events-none relative top-px;
+}
+
+/* Chevron Left - White text */
+.hy-button-outline.has-chevron-left::before,
+.hy-button-secondary.has-chevron-left::before {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-right'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3Cpolyline points='12 5 19 12 12 19'%3E%3C/polyline%3E%3C/svg%3E");
+	@apply transform transition-all h-6 w-6 block duration-300 pointer-events-none relative -top-0.5 rotate-180;
+}
+
+.hy-button-outline.has-chevron-right:hover::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-right'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3Cpolyline points='12 5 19 12 12 19'%3E%3C/polyline%3E%3C/svg%3E");
+	@apply translate-x-1;
+}
+
+/* Chevron Down - Black text */
+.hy-button-primary.has-chevron-down::after,
+.hy-button-tertiary.has-chevron-down::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#001313' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-down'%3E%3Cline x1='12' y1='5' x2='12' y2='19'%3E%3C/line%3E%3Cpolyline points='19 12 12 19 5 12'%3E%3C/polyline%3E%3C/svg%3E");
+	@apply transform transition-all h-6 w-6 block duration-300 pointer-events-none relative top-px;
+}
+
+.hy-button-primary.has-chevron-down:hover::after,
+.hy-button-tertiary.has-chevron-down:hover::after,
+.hy-button-secondary.has-chevron-down:hover::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#001313' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-down'%3E%3Cline x1='12' y1='5' x2='12' y2='19'%3E%3C/line%3E%3Cpolyline points='19 12 12 19 5 12'%3E%3C/polyline%3E%3C/svg%3E");
+	@apply translate-y-1;
+}
+
+/* Chevron Down - White text */
+.hy-button-outline.has-chevron-down::after,
+.hy-button-secondary.has-chevron-down::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-down'%3E%3Cline x1='12' y1='5' x2='12' y2='19'%3E%3C/line%3E%3Cpolyline points='19 12 12 19 5 12'%3E%3C/polyline%3E%3C/svg%3E");
+	@apply transform transition-all h-6 w-6 block duration-300 pointer-events-none relative top-px;
+}
+
+.hy-button-outline.has-chevron-down:hover::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-down'%3E%3Cline x1='12' y1='5' x2='12' y2='19'%3E%3C/line%3E%3Cpolyline points='19 12 12 19 5 12'%3E%3C/polyline%3E%3C/svg%3E");
+	@apply translate-y-1;
+}

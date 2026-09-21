@@ -1,0 +1,83 @@
+{
+    "key": "cpt_faq",
+    "title": "FAQ Details",
+    "fields": [
+        {
+            "key": "cpt_faq_message_key",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Edit the details of this FAQ",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "cpt_faq_question_key",
+            "label": "FAQ Question",
+            "name": "cpt_faq_question",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Add FAQ question",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+		{
+            "key": "cpt_faq_answer_key",
+            "label": "FAQ Answer",
+            "name": "cpt_faq_answer",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Add FAQ Answer",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            },
+			"default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "faq"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

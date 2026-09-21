@@ -1,0 +1,21 @@
+{
+    "key": "nav_item_options_key",
+    "title": "Nav Item Options",
+    "fields": [
+        {
+            "key": "nav_item_icon_key",
+            "name": "nav_item_icon",
+            "label": "Nav Item Icon",
+            "type": "select"        
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "nav_menu_item",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ]
+}

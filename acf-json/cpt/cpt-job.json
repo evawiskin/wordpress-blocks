@@ -1,0 +1,143 @@
+{
+    "key": "cpt_job_vacancies",
+    "title": "Job Details",
+    "fields": [
+        {
+            "key": "cpt_job_message_key",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Edit the details of the job vacancy.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+		{
+			"key": "cpt_job_role_key",
+			"label": "Job Role",
+			"name": "cpt_job_role",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 1,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_job_location_key",
+			"label": "Job Location",
+			"name": "cpt_job_location",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 1,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_job_salary_key",
+			"label": "Job Salary",
+			"name": "cpt_job_salary",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 1,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_job_hours_key",
+			"label": "Job Hours",
+			"name": "cpt_job_hours",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_job_description_key",
+			"label": "Job Description",
+			"name": "cpt_job_description",
+			"aria-label": "",
+			"type": "wysiwyg",
+			"instructions": "",
+			"required": 1,
+			"tabs": "all",
+            "toolbar": "full",
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_job_closing_date_key",
+			"label": "Job Closing Date",
+			"name": "cpt_job_closing_date",
+			"aria-label": "",
+			"type": "date_picker",
+			"instructions": "",
+			"required": 1,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_job_linkedin_link_key",
+			"label": "Linkedin Link",
+			"name": "cpt_job_linkedin_link",
+			"type": "link",
+			"instructions": "A link to the job on Linkedin.",
+			"return_format": "array",
+			"wrapper": {
+				"width": "50%"
+			}
+		},
+		{
+			"key": "cpt_job_form_anchor_key",
+			"label": "Form Anchor",
+			"name": "cpt_job_form_anchor",
+			"type": "text",
+			"instructions": "Enter the anchor for the application form.",
+			"wrapper": {
+				"width": "50%"
+			}
+		}
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "job"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

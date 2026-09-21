@@ -1,0 +1,220 @@
+{
+    "key": "cpt_person",
+    "title": "Person Details",
+    "fields": [
+        {
+            "key": "cpt_person_information_tab_key",
+            "label": "Information",
+            "type": "tab"
+        },
+        {
+            "key": "cpt_person_information_tab_message_key",
+            "label": "",
+            "type": "message",
+            "message": "Edit the information of this Person",
+            "esc_html": 0
+        },
+        {
+            "key": "cpt_person_name_key",
+            "label": "Name",
+            "name": "cpt_person_name",
+            "type": "text",
+            "instructions": "Enter the name of this Person. This is used on the front end, rather than the post title itself.",
+            "required": 1,
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "cpt_person_job_title_key",
+            "label": "Job Title",
+            "name": "cpt_person_job_title",
+            "type": "text",
+            "instructions": "Enter the job title of this Person.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "cpt_person_bio_key",
+            "label": "Bio",
+            "name": "cpt_person_bio",
+            "type": "textarea",
+            "instructions": "Enter the bio of this Person."
+        },
+        {
+            "key": "cpt_person_likes_repeater_key",
+            "label": "Likes",
+            "name": "cpt_person_likes_repeater",
+            "type": "repeater",
+            "instructions": "Enter the likes of this Person. These appear in the person modal on the front end.",
+            "button_label": "Add Like",
+            "wrapper": {
+                "width": "50"
+            },
+            "sub_fields": {
+                "cpt_person_like_key": {
+                    "key": "cpt_person_like_key",
+                    "label": "Like",
+                    "name": "cpt_person_like",
+                    "type": "text",
+                    "instructions": "Enter a like of this Person.",
+                    "required": 1
+                }
+            }
+        },
+        {
+            "key": "cpt_person_dislikes_repeater_key",
+            "label": "Dislikes",
+            "name": "cpt_person_dislikes_repeater",
+            "type": "repeater",
+            "instructions": "Enter the dislikes of this Person. These appear in the person modal on the front end.",
+            "button_label": "Add Dislike",
+            "wrapper": {
+                "width": "50"
+            },
+            "sub_fields": {
+                "cpt_person_like_key": {
+                    "key": "cpt_person_dislike_key",
+                    "label": "Dislike",
+                    "name": "cpt_person_dislike",
+                    "type": "text",
+                    "instructions": "Enter a dislike of this Person.",
+                    "required": 1
+                }
+            }
+        },
+        {
+            "key": "cpt_person_linkedin_url_key",
+            "label": "Linkedin URL",
+            "name": "cpt_person_linkedin_url",
+            "type": "url",
+            "instructions": "Enter this person's Linkedin profile URL, if applicable.",
+            "wrapper": {
+                "width": "50"
+            }
+        }, 
+        {
+            "key": "cpt_person_pronouns_key",
+            "label": "Pronouns",
+            "name": "cpt_person_pronouns",
+            "type": "text",
+            "instructions": "Add the pronouns of the selected user.",
+            "required": 0,
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "cpt_person_display_modal_key",
+            "label": "Display Modal?",
+            "name": "cpt_person_display_modal",
+            "type": "true_false",
+            "ui": "1",
+            "ui_on_text": "Yes - Hide single page",
+            "ui_off_text": "No - Show single page",
+            "instructions": "Determines whether a modal with additional information can be displayed for this Person.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "cpt_person_can_be_displayed_randomly_key",
+            "label": "Can be displayed randomly?",
+            "name": "cpt_person_can_be_displayed_randomly",
+            "type": "true_false",
+            "ui": "1",
+            "instructions": "Determines whether this Person can be displayed randomly in the 'Let's Get Started' Block.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "cpt_person_images_tab_key",
+            "label": "Images",
+            "type": "tab"
+        },
+        {
+            "key": "cpt_person_images_tab_message_key",
+            "label": "",
+            "type": "message",
+            "message": "Edit the images of this Person",
+            "esc_html": 0
+        },
+        {
+            "key": "cpt_person_profile_image_key",
+            "label": "Profile Image",
+            "name": "cpt_person_profile_image",
+            "type": "image",
+            "instructions": "Upload an image of this Person. This will be used on the front end for their 'Avatar' - eg on cards, or article byline. Use a square image for best results.",
+            "return_format": "id",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "cpt_person_banner_image_key",
+            "label": "Banner Image",
+            "name": "cpt_person_banner_image",
+            "type": "image",
+            "return_format": "id",
+            "wrapper":{
+                "width": "50%"
+            },
+            "instructions": "Upload an image to be used on the single banner page for this person. Please upload in aspect ratio 3:2."
+        },
+        {
+            "key": "cpt_person_fun_profile_image_key",
+            "label": "Fun Profile Image",
+            "name": "cpt_person_fun_profile_image",
+            "type": "image",
+            "instructions": "Upload a 'fun' image of this Person. This will shown on the hoverstate of their 'Avatar' - eg on cards, or article byline. Use a square image for best results.",
+            "return_format": "id",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "cpt_person_asterisk_image_key",
+            "label": "Asterisk Image",
+            "name": "cpt_person_asterisk_image",
+            "type": "image",
+            "instructions": "Upload an image of this Person. This will be used on the front end if they appear in the 'Let's Get Started' section of the site above the footer.",
+            "return_format": "id",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "cpt_person_author_quote_tab_key",
+            "label": "Author Quote",
+            "type": "tab"
+        },
+        {
+            "key": "cpt_person_author_quote_key",
+            "label": "Quote",
+            "name": "cpt_person_author_quote",
+            "type": "textarea",
+            "instructions": "Enter the quote of this Person."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "person"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

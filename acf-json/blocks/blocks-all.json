@@ -1,0 +1,33 @@
+{
+    "key": "visibility",
+    "title": "Block visibility toggle",
+    "fields": [
+        {
+            "key": "block_is_visible_key",
+            "name": "block_is_visible",
+            "label": "Show block?",
+            "type": "true_false",
+            "default_value": 1,
+            "ui": 1,
+            "instructions": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0
+}

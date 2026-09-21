@@ -1,0 +1,59 @@
+{
+    "key": "tax_phase",
+    "title": "Phase fields",
+    "fields": [
+		{
+            "key": "tax_phase_color_key",
+            "label": "Lead color",
+            "name": "tax_phase_color",
+            "type": "select",
+            "choices": [],
+            "instructions": "Select lead color which we use across the website"
+        },
+        {
+            "key": "tax_phase_icon_key",
+            "label": "Icon",
+            "name": "tax_phase_icon",
+            "type": "select",
+            "choices": [],
+            "instructions": "Select icon which we use across the website"
+        },
+        {
+            "key": "tax_phase_long_desc_key",
+            "label": "Long Description (for cards)",
+            "name": "tax_phase_long_desc",
+            "type": "wysiwyg",
+            "instructions": "Description for card",
+            "media_upload": 0,
+            "tabs": "visual",
+            "toolbar": "basic"
+        },
+        {
+            "key": "tax_phase_image_key",
+            "label": "Image",
+            "name": "tax_phase_image",
+            "type": "image",
+            "return_format": "id",
+            "instructions": "Select banner for this phase"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "phase"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

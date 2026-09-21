@@ -1,0 +1,8 @@
+/* Default Swiper Pagination */
+.swiper-bullet {
+    @apply cursor-pointer w-4 h-4 rounded-full bg-gray-400;
+}
+
+.swiper-bullet.active {
+    @apply bg-black;
+}

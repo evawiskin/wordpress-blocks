@@ -1,0 +1,161 @@
+{
+    "key": "cpt_testimonial",
+    "title": "Testimonial Details",
+    "fields": [
+        {
+            "key": "cpt_testimonial_message_key",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Edit the details of this Testimonial",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "cpt_testimonial_rating_key",
+            "label": "Testimonial Rating",
+            "name": "cpt_testimonial_rating",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Add Testimonial Rating",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 5,
+            "step": 1,
+            "placeholder": "1-5"
+        },
+		{
+            "key": "cpt_testimonial_headline_key",
+            "label": "Testimonial Headline",
+            "name": "cpt_testimonial_headline",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Add Testimonial Title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+		{
+            "key": "cpt_testimonial_attestant_name_key",
+            "label": "Testimonial Name",
+            "name": "cpt_testimonial_attestant_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Add Testimonial Name",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33%",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "cpt_testimonial_attestant_role_key",
+            "label": "Testimonial Author's role",
+            "name": "cpt_testimonial_attestant_role",
+            "type": "text",
+            "instructions": "Add Testimonial Author's role",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33%",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+		{
+            "key": "cpt_testimonial_attestant_location_key",
+            "label": "Testimonial Location",
+            "name": "cpt_testimonial_attestant_location",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Add Testimonial Location",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33%",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+		{
+            "key": "cpt_testimonial_content_key",
+            "label": "Testimonial Content",
+            "name": "cpt_testimonial_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Add Testimonial Content",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100%",
+                "class": "",
+                "id": ""
+            },
+			"default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "testimonial"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

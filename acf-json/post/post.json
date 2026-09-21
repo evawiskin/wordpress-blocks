@@ -1,0 +1,56 @@
+{
+    "key": "post_options_key",
+    "title": "Post Options",
+    "fields": [
+        {
+            "key": "post_related_posts_key",
+            "label": "Related Posts",
+            "name": "post_related_posts",
+            "type": "relationship",
+            "required": 0,
+            "post_type": [
+                "post"
+            ],
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "return_format": "id",
+            "min": "0",
+            "max": "3"
+        },
+        {
+            "key" : "post_cta_person_override_key",
+            "label" : "Specific Person for CTA",
+            "name" : "post_cta_person_override",
+            "type" : "post_object",
+            "instructions" : "Select a specific person to display on this post. Otherwise, a random person who is eligible to be shown will be selected.",
+            "required" : 0,
+            "conditional_logic" : 0,
+            "allow_null" : 1,
+            "post_type" : [
+                "person"
+            ],
+            "return_format" : "id"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1694078919
+}

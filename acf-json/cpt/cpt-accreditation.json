@@ -1,0 +1,55 @@
+{
+    "key": "cpt_accreditations",
+    "title": "Accreditations",
+    "fields": [
+        {
+            "key": "cpt_accreditation_message_key",
+            "name": "cpt_accreditation_message",
+            "type": "message",
+            "message": "Edit the details of the accreditation."
+        },
+        {
+            "key": "cpt_accreditation_country_key",
+            "name": "cpt_accreditation_country",
+            "label": "Accreditation Country",
+            "type": "text"
+        },
+        {
+            "key": "cpt_accreditation_name_key",
+            "name": "cpt_accreditation_name",
+            "label": "Accreditation Name",
+            "type": "text"
+        },
+		{
+			"key": "cpt_accreditation_year_key",
+			"label": "Accreditation Year",
+			"name": "cpt_accreditation_year",
+			"type": "text",
+			"conditional_logic": 0
+		},
+		{
+			"key": "cpt_accreditation_description_key",
+			"label": "Accreditation Description",
+			"name": "cpt_accreditation_description",
+			"type": "textarea",
+			"conditional_logic": 0
+		},
+        {
+            "key": "cpt_accreditation_image_key",
+            "label": "Accreditation Image",
+            "name": "cpt_accreditation_image",
+            "type": "image",
+            "return_format": "id",
+            "required": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "accreditation"
+            }
+        ]
+    ]
+}

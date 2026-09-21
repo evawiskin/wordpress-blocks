@@ -1,0 +1,364 @@
+/* 
+    For a thorough overview of targetting Gravity Forms fields, 
+    see: https://docs.gravityforms.com/css-targeting-examples 
+*/
+
+/* gform_heading class wraps the description and title defined in a gform */
+/* we typically hide this and define our own title and description using ACF */
+.gform_heading, .gform_title, .gform_description {
+    @apply 
+    hidden;
+}
+
+/* Coliumn layout */
+.gform_fields {
+    @apply
+    grid grid-cols-1 md:grid-cols-2
+    gap-x-10 gap-y-4 md:gap-y-8
+}
+
+.gfield--width-half {
+    @apply md:col-span-1;
+}
+
+.gfield--width-full {
+    @apply md:col-span-2;
+}
+
+/* this class wraps most gform fields */
+.gfield {
+    @apply
+    flex flex-col justify-end mb-0;
+}
+
+.gfield_label {
+    @apply 
+    block 
+    text-base font-bold 
+    font-area-normal
+    text-current
+    mb-4;
+}
+
+/* this class wraps the input fields INSIDE the gfields */
+.ginput_container {
+    @apply 
+    block;
+}
+
+/* this class wraps the description of a gfield */
+.gfield_description {
+    @apply 
+    text-xs text-current font-bold
+    mb-4;
+}
+
+/* consistent styling for the basic gform fields */
+.gfield input[type=color],
+.gfield input[type=email],
+.gfield input[type=month],
+.gfield input[type=number],
+.gfield input[type=password],
+.gfield input[type=tel],
+.gfield input[type=text],
+.gfield input[type=time],
+.gfield input[type=url],
+.gfield input[type=week],
+.gfield input[type=month],
+.gfield input[type=search],
+.gfield textarea, .gfield select, .ginput_container_fileupload {
+    @apply 
+    w-full
+    px-4 py-3
+    text-forest-green-500
+    border-2 border-gretter-100 rounded-xl bg-white
+    focus:outline-none focus:border-forest-green-500
+    transition-all duration-300 ease-in-out;
+}
+
+.gform_fileupload_rules {
+    @apply text-current
+}
+
+.gfield_checkbox, .gfield_radio {
+    @apply flex flex-col gap-4;
+}
+
+.gfield_radio .gchoice, .gfield_checkbox .gchoice {
+    @apply flex items-start gap-3;
+}
+
+.gfield_radio input, .gfield_checkbox input {
+    @apply appearance-none cursor-pointer relative w-5 h-5 bg-white border-2 border-gretter-100 -mt-1 shrink-0;
+}
+
+.gfield_checkbox input {
+    @apply rounded shrink-0 top-1;
+}
+
+.gfield_radio input {
+    @apply rounded-full shrink-0;
+}
+
+.gfield_checkbox input:checked, .gfield_radio input:checked {
+    @apply border-forest-green-500 bg-forest-green-500
+}
+
+.gfield_checkbox input:checked::after, .gfield_radio input:checked::after {
+    content: "";
+    @apply absolute block inset-0 bg-[url("../imgs/feather-icons/check-white.svg")]
+}
+
+.gfield_checkbox .gform-field-label, .gfield_radio .gform-field-label {
+    @apply font-normal relative -top-1;
+}
+
+.hidden_label label {
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+}
+
+.gfield textarea {
+    @apply
+    h-32;
+}
+
+.gfield--type-select select {
+    @apply bg-no-repeat appearance-none;
+    background-position: right 10px center;
+    background-image: url("../../../assets/dist/imgs/feather-icons/chevron-down.svg");
+    background-size: 20px;
+}
+
+.gform_footer {
+    @apply mt-8;
+}
+
+.gform_button,
+.gform_footer input[type="submit"] {
+    @apply hy-button-secondary;
+}
+
+
+/* Error/Validation styling */
+.gfield_required {
+    @apply 
+    text-system-red font-bold;
+}
+
+.gfield_description.gfield_validation_message {
+    @apply 
+    text-system-red font-bold mt-2;
+}
+
+.gfield_error .ginput_container input[type="text"],
+.gfield_error .ginput_container input[type="email"],
+.gfield_error .ginput_container input[type="url"],
+.gfield_error .ginput_container input[type="tel"],
+.gfield_error .ginput_container input[type="number"],
+.gfield_error .ginput_container input[type="password"],
+.gfield_error .ginput_container textarea, .gfield_error .ginput_container select
+{
+    @apply 
+    border-2 border-system-red;
+}
+
+.gform_validation_errors {
+    @apply 
+    text-system-red font-bold mb-4;
+}
+
+/* Success Message Styling */
+.gform_confirmation_wrapper {
+    @apply 
+    text-forest-green-500 font-medium mt-4;
+}
+
+/* Dark form styles */
+.form-dark .gfield input[type=color],
+.form-dark .gfield input[type=email],
+.form-dark .gfield input[type=month],
+.form-dark .gfield input[type=number],
+.form-dark .gfield input[type=password],
+.form-dark .gfield input[type=tel],
+.form-dark .gfield input[type=text],
+.form-dark .gfield input[type=time],
+.form-dark .gfield input[type=url],
+.form-dark .gfield input[type=week],
+.form-dark .gfield input[type=month],
+.form-dark .gfield input[type=search],
+.form-dark .gfield textarea, .form-dark .gfield select, .form-dark .ginput_container_fileupload {
+    @apply 
+    text-gretter-50 placeholder:text-gretter-50 placeholder:font-normal
+    border-gretter-50 bg-white/10
+    focus:outline-none focus:border-electric-green-500;
+}
+
+.form-dark .gfield_checkbox .gform-field-label,
+.form-dark .gfield_description,
+.form-dark .gform_confirmation_wrapper {
+    @apply text-white;
+}
+
+/* Newsletter forms */
+.mail-icon input[type="email"] {
+    background-image: url("../imgs/hiyield-icons/mail-forest-green.svg");
+    @apply placeholder:text-forest-green-500 placeholder:font-normal pl-12 block bg-no-repeat bg-[center_left_1rem] bg-[length:1.5rem] bg-white;
+}
+
+
+.form-dark .mail-icon input[type="email"] {
+    background-image: url("../imgs/hiyield-icons/mail-neutral.svg");
+    @apply placeholder:text-gretter-50 bg-forest-green-400 border-gretter-50 min-w-72;
+}
+
+.gfield--type-captcha {
+    @apply absolute
+}
+
+/*footer newsletter specific form styling */
+
+footer .gform_ajax_spinner {
+    @apply 
+    -bottom-6 absolute block;
+}
+
+footer .gform_wrapper form {
+    @apply flex flex-col justify-end gap-4 items-end;
+}
+
+footer .gform_wrapper .gform_footer {
+    @apply mt-0 w-full md:w-auto;
+}
+
+footer .gform_button, .gform_footer input[type=submit]{
+    @apply w-full md:w-auto
+}
+
+footer .gfield.gfield--type-checkbox {
+    @apply text-right max-w-sm !mb-4;
+}
+footer .gfield.gfield--type-checkbox .gchoice {
+    @apply flex-row-reverse;
+}
+#reading-progress-container .gfield.gfield--type-checkbox {
+    @apply !mb-4;
+}
+
+/* File Upload Styling */
+.gform_fileupload_multifile {
+    @apply w-full h-full absolute left-0 right-0 text-xs;
+}
+
+.ginput_container_fileupload {
+    @apply w-full min-h-32 relative mb-6 flex flex-col items-center justify-center;
+}
+
+.ginput_container_fileupload .gform_drop_area {
+    @apply w-full h-full text-center p-4 relative flex flex-col items-center justify-center;
+}
+
+.ginput_container_fileupload .gform_button_select_files {
+    @apply absolute w-full h-full left-0 top-0 text-transparent;
+}
+
+.ginput_container_fileupload .gform_drop_instructions {
+    @apply relative w-full text-transparent;
+}
+
+.ginput_container_fileupload .gform_drop_instructions::after {
+    content: "Click or drag files to this area to upload.";
+    @apply absolute top-0 left-0 w-full text-center text-gretter-50;
+}
+
+.ginput_container_fileupload .gform_drop_area::before {
+    content: url("../imgs/hiyield-icons/backup-icon.svg");
+    @apply block h-6 w-6 mb-3;
+}
+
+.ginput_container_fileupload .gform_drop_area::before svg {
+    @apply text-electric-green-500;
+}
+
+.ginput_container_fileupload .gform_drop_area::after {
+    content: ".PDF and .doc only (up to 10MB)";
+    @apply mt-6 md:mt-4 block;
+}
+
+.gfield--type-fileupload .gform_fileupload_rules {
+    @apply hidden;
+}
+
+.gfield--type-fileupload .validation_message--hidden-on-empty {
+    @apply m-0;
+}
+
+.gfield--type-fileupload:has(.gfield_fileupload_filename) .ginput_preview_list {
+    @apply bg-black/90 size-full z-10 flex justify-center font-bold;
+}
+
+.gfield--type-fileupload .ginput_preview {
+    @apply inline-flex flex-row gap-2 items-center text-xs text-current font-bold mb-2;
+}
+
+/* Prevents spacing between hidden fields - Requires the class adding to the form settings */
+.single-row-form .gform_fields {
+    @apply gap-y-0;
+}
+
+/* Turnstile form field styling */
+.gfield--input-type-turnstile label {
+    @apply hidden;
+}
+
+/* Gated Access Form Styling */
+.gated-access-form .gform_fields {
+    @apply grid grid-cols-1 lg:grid-cols-3 gap-6;
+}
+
+.gated-access-form .gfield_required {
+    @apply text-current;
+}
+
+.gated-access-form .gfield--input-type-text {
+    @apply col-span-full lg:col-span-1;
+}
+
+.gated-access-form .gfield--type-consent {
+    @apply col-span-full;
+}
+
+.gated-access-form .gfield--type-consent .gform-field-label a {
+    @apply underline;
+}
+
+.gated-access-form .gfield--type-consent .gfield_label {
+    @apply hidden;
+}
+
+.gated-access-form .gfield--type-consent input[type="checkbox"] {
+    @apply appearance-none rounded cursor-pointer relative w-5 h-5 bg-white border-2 border-gretter-100 mt-1 shrink-0;
+}
+
+.gated-access-form .gfield--type-consent input:checked {
+    @apply border-electric-green-500 bg-electric-green-500;
+}
+
+.gated-access-form .gfield--type-consent input:checked::after {
+    content: "";
+    @apply absolute block inset-0 bg-[url("../imgs/feather-icons/check.svg")];
+}
+
+.gated-access-form .ginput_container_consent {
+    @apply flex gap-4;
+}
+
+.gated-access-form .gfield--width-full {
+    @apply col-span-full;
+}
+
+.gated-access-form .gform_button,
+.gated-access-form .gform_footer input[type="submit"] {
+    @apply hy-button-primary;
+}

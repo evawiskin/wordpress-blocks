@@ -1,0 +1,46 @@
+{
+    "key": "taxonomy_service",
+    "title": "Service Fields",
+    "fields": [
+		{
+            "key": "taxonomy_service_content_key",
+            "label": "Content",
+            "name": "taxonomy_service_content",
+            "type": "post_object",
+            "post_type": [
+                "service"
+            ],
+            "ui": 1,
+            "instructions": "Select the service content to display. This creates a link between a service post and this service taxonomy term.",
+            "allow_null": 1,
+            "return_format": "id"
+        },
+        {
+            "key": "taxonomy_service_hide_from_service_block_key",
+            "label": "Hide from Service Block",
+            "name": "taxonomy_service_hide_from_service_block",
+            "type": "true_false",
+            "instructions": "Check this box to hide this service from the service block on the services page.",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "service"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672410488
+}

@@ -1,0 +1,131 @@
+:root {
+    /* Modal Styles */
+    --cc-modal-border-radius:0rem;
+    --cc-modal-transition-duration:.25s;
+    --cc-modal-margin:1rem;
+    --cc-z-index:2147483647;
+    --cc-bg:#004444;
+    --cc-overlay-bg:rgba(0,0,0,.65);
+    --cc-webkit-scrollbar-bg:#B0B0B0;
+    --cc-webkit-scrollbar-hover-bg:#909090;
+
+    /* Text Styles */
+    --cc-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --cc-primary-color:#00faa0;
+    --cc-secondary-color:#fff;
+    --cc-link-color:#00faa0;
+    --cc-separator-border-color:var(--cc-primary-color);
+
+    /* Button Styles */
+    --cc-btn-border-radius:0rem;
+
+    --cc-btn-primary-bg:#005050;
+    --cc-btn-primary-color:#fff;
+    --cc-btn-primary-border-color:var(--cc-btn-primary-bg);
+    --cc-btn-primary-hover-bg:#288585;
+    --cc-btn-primary-hover-color:var(--cc-btn-primary-color);
+    --cc-btn-primary-hover-border-color:var(--cc-btn-primary-hover-bg);
+
+    --cc-btn-secondary-bg:var(--cc-bg);
+    --cc-btn-secondary-color:#00faa0;
+    --cc-btn-secondary-border-color:var(--cc-btn-secondary-bg);
+    --cc-btn-secondary-hover-bg:var(--cc-btn-primary-bg);
+    --cc-btn-secondary-hover-color:var(--cc-btn-secondary-color);
+    --cc-btn-secondary-hover-border-color:var(--cc-btn-secondary-hover-bg);
+
+    /* Toggle Styles */
+    --cc-pm-toggle-border-radius:4em;
+    --cc-toggle-on-bg:#00e087;
+    --cc-toggle-off-bg:#6eb8b8;
+    --cc-toggle-on-knob-bg:#FFFFFF;
+    --cc-toggle-off-knob-bg:var(--cc-toggle-on-knob-bg);
+
+    --cc-toggle-enabled-icon-color:#000000;
+    --cc-toggle-disabled-icon-color:#000000;
+
+    --cc-toggle-readonly-bg:#00e087;
+    --cc-toggle-readonly-knob-bg:#F1F5F9;
+    --cc-toggle-readonly-knob-icon-color:var(--cc-toggle-readonly-bg);
+
+    /* Category Styles */
+    --cc-section-category-border:#000000;
+    --cc-cookie-category-block-bg:var(--cc-btn-primary-bg);
+    --cc-cookie-category-block-border:var(--cc-btn-primary-bg);
+    --cc-cookie-category-block-hover-bg:var(--cc-btn-primary-hover-bg);
+    --cc-cookie-category-block-hover-border:var(--cc-btn-primary-hover-bg);
+    --cc-cookie-category-expanded-block-bg:var(--cc-btn-primary-bg);
+    --cc-cookie-category-expanded-block-hover-bg:var(--cc-btn-primary-hover-bg);
+
+    /* Footer Styles (typically disabled as we have our privacy policy in the preferences modal) */
+    --cc-footer-bg:var(--cc-bg);
+    --cc-footer-color:var(--cc-primary-color);
+    --cc-footer-border-color:var(--cc-footer-bg);
+}
+
+/* 
+    For some reason the badge is using the secondary colour with the secondary button background.
+    This adjusts the badge to use the secondary button colour to match the background.
+    Due to the order of when our styles our loaded;  we should not need to "important" this.
+*/
+#cc-main .pm__badge {
+    color: var(--cc-btn-secondary-color);
+}
+
+/*
+    By default there is a fixed hover state on the non-intractable sections of the preferences modal.
+    This hover state is that of the background of the intractable category sections.
+    We're removing this hover state to ensure we don't make an end user think the section is intractable.
+*/
+#cc-main .pm__section:not(:first-child):hover {
+    background-color: transparent;
+}
+
+/*
+    The section category toggles inherit their colour from the cc-main element.
+    This element might have a different background to the section category toggles. 
+    As this element has the button primary background we'll supply it with the button primary colour.
+*/
+#cc-main .pm__section-toggles {
+    color: var(--cc-btn-primary-color);
+}
+
+/*
+    The section category toggle descriptions have the same colour as the other section descriptions.
+    This isn't always suited as you can change the background of the section category toggle descriptions.
+    We've gone for the button primary background for this element so we need the colour to match
+*/
+#cc-main .pm__section-toggles .pm__section-desc-wrapper {
+    color: var(--cc-btn-primary-color);
+}
+
+/*
+    We want to specifically target the reject button and make it into an outline variant
+*/
+#cc-main .cm__btn[data-role="necessary"],
+#cc-main .pm__btn[data-role="necessary"] {
+    background-color: transparent;
+    border-color: transparent;
+    transition: opacity 0.25s;
+}
+#cc-main .cm__btn[data-role="necessary"]:hover,
+#cc-main .pm__btn[data-role="necessary"]:hover {
+    opacity: 0.75;
+}
+
+/*
+    Let's give our buttons more breathing room as they've got longer text.
+    To start with we'll remove the max-width from all sizes rather than just from mobile.
+    Next we'll extend the mobile styles to tablet so that they're stacked and more readable.
+*/
+#cc-main .cm--bar.cm--inline .cm__btns {
+    max-width: none;
+}
+@media screen and (max-width: 800px) {
+    #cc-main .cm__btn-group {
+        display: flex;
+        flex-direction: column;
+    }
+    #cc-main .cm--inline .cm__btn+.cm__btn {
+        margin: 0.375rem 0px 0px;
+    }
+}

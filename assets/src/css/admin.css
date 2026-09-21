@@ -1,0 +1,251 @@
+
+/* Font Smoothing */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/* stops tailwind utility class from messing with wordpress core classes */
+.fixed {
+	position: unset !important;
+}
+
+/* Prevent Tailwind's size-full class from affecting WordPress images in admin */
+figure.size-full,
+img.size-full {
+	width: auto !important;
+	height: auto !important;
+}
+
+/* Fix image wrapper block layout issues in admin */
+.wp-block-hiyield-image-wrapper {
+	position: relative !important;
+	width: 100% !important;
+	height: auto !important;
+	overflow: visible !important;
+}
+
+.wp-block-hiyield-image-wrapper .wp-block-image-wrapper {
+	position: relative !important;
+	width: 100% !important;
+	height: auto !important;
+	overflow: visible !important;
+	display: block !important;
+}
+
+.wp-block-hiyield-image-wrapper .components-resizable-box__container {
+	max-width: 100% !important;
+	position: relative !important;
+}
+
+.wp-block-hiyield-image-wrapper figure.wp-block-image {
+	position: relative !important;
+	width: 100% !important;
+	height: auto !important;
+}
+
+/* Prevent the WP admin headings from being increased by the front end styling */
+html body.wp-admin #wpbody-content > div:not(.block-editor) h1 {
+	font-size: 2rem;
+	padding-top: 0.67rem;
+	padding-bottom: 0.67rem;
+}
+
+html body.wp-admin #wpbody-content > div:not(.block-editor) h2,
+html body.wp-admin #wpbody-content > div:not(.block-editor) h3{
+	font-size: 1.3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+html body.wp-admin #wpbody-content > div:not(.block-editor) h4,
+html body.wp-admin #wpbody-content > div:not(.block-editor) h5,
+html body.wp-admin #wpbody-content > div:not(.block-editor) h6{
+	font-size: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+
+/* Change background and text colour for specific post types */
+.post-type-post .block-editor .wp-block-post-content,
+.post-type-work .block-editor .wp-block-post-content {
+	background: #F6FFFC;
+	color: #001313
+}
+
+.post-type-work .edit-post-visual-editor__post-title-wrapper {
+	background: #F6FFFC;
+	color: #001313 !important;
+}
+
+.edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	display: block;
+	font-size: 2rem;
+	padding: 0.5rem;
+	margin: 0;
+}
+.edit-post-visual-editor__post-title-wrapper .editor-post-title:before {
+	position: absolute;
+	top: -1rem;
+	content: "Page Title:";
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+html body.wp-admin .title {
+	color: #999;
+}
+html body.wp-admin .title a.row-title {
+	color: #444;
+}
+
+.block-editor .editor-styles-wrapper .is-layout-flow > .alignright {
+	float: none;
+	margin: 0;
+}
+
+.block-editor .container {
+	max-width: 100%;
+}
+.edit-post-visual-editor__post-title-wrapper {
+	padding: 0 4rem;
+}
+
+.wp-block-post-content {
+	padding: 2.5rem 4rem;
+}
+
+/* Fix list item text wrapping in editor */
+.block-editor-block-list__block > .block-editor-rich-text__editable {
+    display: inline-block;
+}
+
+/* ACF overrides */
+.block-editor .edit-post-sidebar .acf-fields {
+	display: flex;
+	flex-wrap: wrap;
+}
+.block-editor .edit-post-sidebar .acf-fields > .acf-field {
+	width: 100%!important;
+}
+.block-editor .edit-post-sidebar .acf-fields > .acf-field[data-width="50"] {
+	width: calc(50% - 2rem)!important;
+}
+
+/* Removes the button block width settings that WP haven't yet made a toggle for */
+.block-editor .components-button-group[aria-label="Button width"] {
+	display: none;
+}
+
+.block-editor-block-list__layout .wp-block:not(.wp-block-button) {
+	border: 1px solid #eee;
+	padding: 8px;
+}
+
+
+/* Add clickable whitespace around hiyield blocks */
+div[class*="wp-block-hiyield-"]:before {
+	content: "";
+	font-family: dashicons;
+	position: absolute;
+	z-index: 1;
+	top: -8px;
+	left: -8px;
+	right: -8px;
+	bottom: -8px;
+	font-size: 16px;
+	color: currentColor;
+	background: transparent;
+	pointer-events: none;
+}
+/* div[class*="wp-block-hiyield-"] > * {
+	position: relative;
+	z-index: 2;
+} */
+ 
+/* Add columns icon above each column block */
+div.wp-block-hiyield-column:before {
+	content: "\f509";
+	top: -18px;
+}
+
+/* Disable links in the block editor */
+.block-editor .interface-interface-skeleton__content a:not(.acf-icon) {
+	pointer-events: none;
+	cursor: default;
+}
+
+/* Override to enable links in the Yoast SEO metabox */
+.wpseo-metabox-content a, .block-editor .interface-interface-skeleton__content .acf-link a.button {
+	pointer-events: auto !important;
+	cursor: pointer !important;
+}
+
+/* force all images to be full width */
+.wp-block-image img {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+
+
+/* Additional Forced Styles  */
+
+.block-editor__container .block-editor\:w-full {
+    width: 100%;
+}
+.block-editor__container .block-editor\:h-full {
+    height: 100%;
+}
+
+.block-editor__container .block-editor\:grid-cols-3 {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+
+
+/*
+ * Block Editor Patterns List Styling
+ */
+
+	/* Hide the block pattern previews as they don't render correctly */
+	.block-editor .block-editor-block-patterns-list__item .block-editor-block-preview__content iframe{
+		display: none;
+	}
+	/* Show the title and description instead */
+	.block-editor .block-editor-block-patterns-list__item:before {
+		content: attr(aria-label);
+		font-weight: bold;
+		font-size: 1.25rem;
+		padding-bottom: 2px;
+		display: block;
+	}
+	.block-editor .block-editor-block-patterns-list__item [id^="block-editor-block-patterns-list__item-description"] {
+		position: relative!important;
+		height: auto!important;
+		width: auto!important;
+		clip-path: none!important;
+	}
+	.block-editor .block-editor-block-patterns-list__item {
+		padding: 1rem;
+		border: 1px solid #e0e0e0;
+		border-radius: 4px;
+	}
+	.block-editor .block-editor-block-patterns-list__item:hover {
+		background-color: #f7f7f7;
+	}
+	.block-editor .block-editor-block-patterns-list__item:hover .block-editor-block-preview__container,
+	.block-editor .block-editor-block-patterns-list__item:focus .block-editor-block-preview__container  {
+		box-shadow: none;
+	}
+
+	/* Editor link styling fallback - should match front-end */
+	.wp-block-post-content a:not(.hy-button-primary, .hy-button-secondary, .hy-button-tertiary, .hy-button-outline, .hy-button-outline-neutral, .hy-button-link, .hy-button-link-sm, .hy-card, .hy-tile){
+		text-decoration: underline;
+		text-underline-offset: 3px
+	}
+
+	/* Override figure->img height in editor when we want the image to span full size*/
+	figure.image-span-full-in-editor img {
+		height: 100%;
+	}

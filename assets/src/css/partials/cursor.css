@@ -1,0 +1,17 @@
+/**
+ * Custom video "Play showreel" cursor overlay.
+ *
+ * `.custom-cursor` / `.custom-cursor-mobile` is an absolutely-positioned,
+ * non-interactive badge inside the video block. Because of how the page's
+ * stacking contexts resolve it can paint above an open modal (e.g. the
+ * "book a call" scheduler), blocking the booking UI — see CU-86cace6mv.
+ *
+ * Whenever a modal/overlay is open the page scroll is locked via
+ * `body.overflow-hidden`, so in that state we hide the badge so it can never
+ * sit over a dialog. The video-block JS still hides it permanently (`!hidden`)
+ * once the showreel is played, which takes precedence over this rule.
+ */
+body.overflow-hidden .custom-cursor,
+body.overflow-hidden .custom-cursor-mobile {
+	@apply opacity-0 invisible;
+}

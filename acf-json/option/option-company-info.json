@@ -1,0 +1,407 @@
+{
+  "key": "option_company_info",
+  "title": "Company Settings",
+  "fields": [
+    {
+      "key": "option_company_info_tab_key",
+      "label": "Company Info",
+      "name": "option_company_info_tab",
+      "type": "tab"
+    },
+    {
+      "key": "option_company_info_message_key",
+      "label": "",
+      "name": "",
+      "aria-label": "",
+      "type": "message",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "message": "Uses these fields to set contact information. These fields will be pulled into the front end of the website is various places, meaning that company information can be updated from this single location.",
+      "new_lines": "wpautop",
+      "esc_html": 0
+    },
+    {
+      "key": "option_company_info_logo_key",
+      "label": "Company Logo",
+      "name": "option_company_info_logo",
+      "aria-label": "",
+      "type": "image",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": "",
+      "preview_size": "medium"
+    },
+    {
+      "key": "option_company_info_social_tab_key",
+      "label": "Social Media",
+      "name": "option_company_info_social_tab",
+      "type": "tab"
+    },
+    {
+      "key": "option_company_bcorp_url_key",
+      "label": "B Corp URL",
+      "name": "option_company_bcorp_url",
+      "type": "url",
+      "instructions": "Link to the B Corp page."
+    },
+    {
+      "key": "option_company_info_socials_key",
+      "label": "Social Media",
+      "name": "option_company_info_socials",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "block",
+      "button_label": "Add Social Media",
+      "sub_fields": [
+        {
+          "key": "option_company_info_sub_social_url_key",
+          "label": "URL",
+          "name": "option_company_info_sub_social_url",
+          "type": "url",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+          }
+        },
+        {
+          "key": "option_company_info_sub_social_icon_key",
+          "label": "Icon",
+          "name": "option_company_info_sub_social_icon",
+          "type": "select",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "array"
+        }
+      ]
+    },
+    {
+      "key": "option_company_info_contact_details_tab_key",
+      "label": "Contact Details",
+      "type": "tab"
+    },
+    {
+      "key": "option_company_info_sales_display_number_key",
+      "label": "Display Sales Number",
+      "name": "option_company_info_sales_display_number",
+      "type": "text",
+      "instructions": "Sales phone number - the way it displays on the front end.",
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "option_company_info_sales_number_key",
+      "label": "Sales Number",
+      "name": "option_company_info_sales_number",
+      "type": "text",
+      "instructions": "Sales phone number - the actual number which is embedded in the 'tel:' link.",
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "option_company_info_sales_email_key",
+      "label": "Sales Email",
+      "name": "option_company_info_sales_email",
+      "type": "email",
+      "instructions": "Sales email address. This is the same both for the display and the actual email address embedded in the 'mailto:' link.",
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "option_company_info_locations_key",
+      "label": "Office Locations",
+      "name": "option_company_info_locations",
+      "type": "repeater",
+      "button_label": "Add Location",
+      "layout": "table",
+      "sub_fields": [
+        {
+          "key": "option_company_info_locations_location_name_key",
+          "label": "Office Name",
+          "name": "option_company_info_locations_location_name",
+          "type": "text",
+          "instructions": "",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+              "width": "20"
+          }
+        },
+        {
+          "key": "option_company_info_locations_location_address_key",
+          "label": "Office Address",
+          "name": "option_company_info_locations_location_address",
+          "type": "textarea",
+          "instructions": "",
+          "required": 1,
+          "conditional_logic": 0,
+          "new_lines": "br"
+        },
+        {
+          "key": "option_company_info_locations_location_color_key",
+          "label": "Office Colour (Dark Background)",
+          "name": "option_company_info_locations_location_color",
+          "type": "select",
+          "choices": [],
+          "required": 1,
+          "wrapper": {
+              "width": "20"
+          }
+        },
+        {
+          "key": "option_company_info_locations_location_color_light_bg_key",
+          "label": "Office Colour (Light Background)",
+          "name": "option_company_info_locations_location_color_light_bg",
+          "type": "select",
+          "choices": [],
+          "wrapper": {
+              "width": "20"
+          }
+        },
+        {
+          "key": "option_company_info_locations_location_link_key",
+          "label": "Office Link",
+          "name": "option_company_info_locations_location_link",
+          "type": "page_link",
+          "instructions": "",
+          "required": 1,
+          "post_type": ["page"],
+          "wrapper": {
+              "width": "20"
+          }
+        }
+      ]
+    },
+    {
+      "key": "option_newsletter_tab_key",
+      "label": "Newsletter",
+      "name": "option_newsletter_tab",
+      "type": "tab"
+    },
+    {
+      "key": "option_newsletter_title_key",
+      "label": "Newsletter Title",
+      "name": "option_newsletter_title",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "Add a title for the Newsletter Signup.",
+      "required": 0,
+      "conditional_logic": 0,
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "option_newsletter_subtitle_key",
+      "label": "Newsletter Subtitle",
+      "name": "option_newsletter_subtitle",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "Add a subtitle for the Newsletter Signup.",
+      "required": 0,
+      "conditional_logic": 0,
+      "default_value": "",
+      "maxlength": "",
+      "rows": "3",
+      "placeholder": "",
+      "new_lines": "br"
+    },
+    {
+        "key": "option_footer_newsletter_page_link_key",
+        "label": "Footer Newsletter Page Link",
+        "name": "option_footer_newsletter_page_link",
+        "type": "link",
+        "instructions": "Select link for the newsletter page to be used in the footer.",
+        "wrapper": {
+            "width": "50%"
+        },
+        "choices": [],
+        "return_format": "array"
+    },
+    {
+        "key": "option_newsletter_page_link_key",
+        "label": "Sidebar Newsletter Page Link",
+        "name": "option_newsletter_page_link",
+        "type": "link",
+        "instructions": "Select link for the newsletter page to be used in the sidebar.",
+        "wrapper": {
+            "width": "50%"
+        },
+        "choices": [],
+        "return_format": "array"
+    },
+    {
+      "key": "option_company_info_contact_page_tab_key",
+      "label": "Contact Page",
+      "name": "option_company_info_contact_page_tab",
+      "type": "tab"
+    },
+    {
+      "key": "option_company_info_contact_page_hubspot_script_key",
+      "label": "Contact Page Hubspot Script",
+      "name": "option_company_info_contact_page_hubspot_script",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "This script is displayed in the book a call modal."
+    },
+    {
+      "key": "option_company_info_schema_tab_key",
+      "label": "Schema",
+      "name": "option_company_info_schema_tab",
+      "type": "tab"
+    },
+    {
+      "key": "option_company_info_schema_repeater",
+      "label": "Local Business Schema",
+      "name": "option_company_info_schema",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "option_company_info_schema_name",
+          "label": "Business Name",
+          "name": "option_company_info_schema_name",
+          "type": "text",
+          "instructions": "Enter the name of your business as it should appear in search engines and structured data.",
+          "required": 0
+        },
+        {
+          "key": "option_company_info_schema_address_street",
+          "label": "Street Address",
+          "name": "option_company_info_schema_address_street",
+          "type": "text",
+          "instructions": "Enter the street address of your business. This information is essential for accurate location data in search engines.",
+          "required": 1
+        },
+        {
+          "key": "option_company_info_schema_address_locality",
+          "label": "City",
+          "name": "option_company_info_schema_address_locality",
+          "type": "text",
+          "instructions": "Specify the city where your business is located. This helps search engines understand your business's location.",
+          "required": 1
+        },
+        {
+          "key": "option_company_info_schema_address_region",
+          "label": "Region",
+          "name": "option_company_info_schema_address_region",
+          "type": "text",
+          "instructions": "Enter the state or region of your business. This is important for providing accurate location information in structured data.",
+          "required": 1
+        },
+        {
+          "key": "option_company_info_schema_address_postal",
+          "label": "Postal Code",
+          "name": "option_company_info_schema_address_postal",
+          "type": "text",
+          "instructions": "Provide the postal or zip code for your business address. This is necessary for precise location identification in search results.",
+          "required": 1
+        },
+        {
+          "key": "option_company_info_schema_address_country",
+          "label": "Country",
+          "name": "option_company_info_schema_address_country",
+          "type": "text",
+          "instructions": "Enter the country where Hiyield is located. This field is required for structured data and defaults to 'United Kingdom' if left empty.",
+          "required": 1,
+          "default_value": "United Kingdom"
+        },
+        {
+          "key": "option_company_info_schema_opening_hours",
+          "label": "Opening Hours",
+          "name": "option_company_info_schema_opening_hours",
+          "type": "text",
+          "instructions": "Enter the opening hours of Hiyield.",
+          "required": 1
+        },
+        {
+          "key": "option_company_info_schema_image",
+          "label": "Image",
+          "name": "option_company_info_schema_image",
+          "type": "image",
+          "instructions": "Upload an image of Hiyield.",
+          "required": 1
+        },
+        {
+          "key": "option_company_info_schema_description",
+          "label": "Description",
+          "name": "option_company_info_schema_description",
+          "type": "textarea",
+          "instructions": "Enter a description of Hiyield.",
+          "required": 1
+        },
+        {
+          "key": "option_company_info_schema_rating_value",
+          "label": "Rating Value",
+          "name": "option_company_info_schema_rating_value",
+          "type": "text",
+          "instructions": "Enter the rating value of Hiyield.",
+          "required": 1
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "options_page",
+        "operator": "==",
+        "value": "hy-company-settings"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0,
+  "modified": 1672391345
+}

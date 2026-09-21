@@ -1,0 +1,48 @@
+@tailwind base;
+
+/* Font Faces */
+@import "partials/font-faces.css";
+
+/* Containers */
+@import "partials/containers.css";
+
+/* Custom video cursor overlay */
+@import "partials/cursor.css";
+
+/* Typography */
+@import "partials/typography.css";
+
+/* Buttons */
+@import "partials/buttons.css";
+
+/* Core Blocks */
+@import "partials/core-blocks.css";
+
+/* Hamburger */
+/* @import "partials/hamburger.css"; */
+
+/* Pagination */
+@import "partials/pagination.css";
+
+/* Gravity Forms */
+@import "partials/gravity-forms.css";
+
+/* Cookie Consent */
+@import "partials/cookie-consent.css";
+
+/* Swiper Styles */
+@import "partials/swiper.css";
+
+/* Animations */
+@import "partials/animations.css";
+
+/* Focus Styles */
+@import "partials/focus.css";
+
+@tailwind components;
+@tailwind utilities;
+
+/* Force SVG's to be full width/height when wrapped */
+.svg-wrapper svg {
+    @apply w-full h-full;
+}

@@ -1,0 +1,106 @@
+{
+    "key": "option_footer",
+    "title": "Footer",
+    "fields": [
+        {
+            "key": "option_footer_message_key",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Edit the various fields that appear in the footer.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {  
+            "key": "option_footer_menus_tab_key",
+            "label": "Menus",
+            "type": "tab"
+        },
+        {
+            "key": "option_footer_menu_primary_key",
+            "label": "Footer Menu",
+            "name": "option_footer_menu_primary",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Select which menu you would like to appear as the primary footer menu.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            },
+            "choices": [],
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "option_footer_menu_secondary_key",
+            "label": "Secondary Footer Menu",
+            "name": "option_footer_menu_secondary",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Select which menu you would like to appear as the secondary footer menu.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            },
+            "choices": [],
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "option_footer_menu_quaternary_key",
+            "label": "Quaternary Footer Menu",
+            "name": "option_footer_menu_quaternary",
+            "type": "select",
+            "instructions": "Select which menu you would like to appear as the quaternary footer menu.",
+            "wrapper": {
+                "width": "50%"
+            },
+            "choices": [],
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "hy-footer-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1672391345
+}

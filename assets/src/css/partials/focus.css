@@ -1,0 +1,166 @@
+/* -------------------------------------------------------------
+    GLOBAL BASELINE (ONE RULE)
+------------------------------------------------------------- */
+.frontend :focus-visible {
+	outline: 2px solid var(--focus-outline, theme(colors.white));
+	outline-offset: 4px;
+	border-radius: 0.375rem;
+	transition: all 150ms ease-in-out;
+}
+
+/* -------------------------------------------------------------
+    BACKGROUND-AWARE VARIABLE DECLARATIONS
+    Sets --focus-outline for both bg-* and has-*-background-color
+------------------------------------------------------------- */
+
+/* Forest Green */
+.bg-forest-green-500,
+.has-forest-green-500-background-color {
+	--focus-outline: theme(colors.electric-green.500);
+}
+.bg-forest-green-600,
+.has-forest-green-600-background-color {
+	--focus-outline: theme(colors.electric-green.700);
+}
+.bg-forest-green-700,
+.has-forest-green-700-background-color {
+	--focus-outline: theme(colors.electric-green.400);
+}
+
+/* Electric Green */
+.bg-electric-green-500,
+.has-electric-green-500-background-color {
+	--focus-outline: theme(colors.forest-green.700);
+}
+.bg-electric-green-600,
+.has-electric-green-600-background-color {
+	--focus-outline: theme(colors.forest-green.900);
+}
+.bg-electric-green-700,
+.has-electric-green-700-background-color {
+	--focus-outline: theme(colors.forest-green.900);
+}
+
+/* Deep Ocean Blue */
+.bg-deep-ocean-blue-500,
+.has-deep-ocean-blue-500-background-color {
+	--focus-outline: theme(colors.sky-blue.400);
+}
+.bg-deep-ocean-blue-600,
+.has-deep-ocean-blue-600-background-color {
+	--focus-outline: theme(colors.sky-blue.300);
+}
+.bg-deep-ocean-blue-700,
+.has-deep-ocean-blue-700-background-color {
+	--focus-outline: theme(colors.sky-blue.200);
+}
+
+/* Sky Blue */
+.bg-sky-blue-500,
+.has-sky-blue-500-background-color {
+	--focus-outline: theme(colors.deep-ocean-blue.700);
+}
+.bg-sky-blue-600,
+.has-sky-blue-600-background-color {
+	--focus-outline: theme(colors.deep-ocean-blue.800);
+}
+.bg-sky-blue-700,
+.has-sky-blue-700-background-color {
+	--focus-outline: theme(colors.white);
+}
+
+/* Flamingo Pink */
+.bg-flamingo-pink-500,
+.has-flamingo-pink-500-background-color {
+	--focus-outline: theme(colors.sunshine-yellow.400);
+}
+.bg-flamingo-pink-600,
+.has-flamingo-pink-600-background-color {
+	--focus-outline: theme(colors.sunshine-yellow.300);
+}
+.bg-flamingo-pink-700,
+.has-flamingo-pink-700-background-color {
+	--focus-outline: theme(colors.sunshine-yellow.200);
+}
+
+/* Purple */
+.bg-purple-500,
+.has-purple-500-background-color {
+	--focus-outline: theme(colors.flamingo-pink.300);
+}
+.bg-purple-600,
+.has-purple-600-background-color {
+	--focus-outline: theme(colors.flamingo-pink.200);
+}
+.bg-purple-700,
+.has-purple-700-background-color {
+	--focus-outline: theme(colors.electric-green.400);
+}
+
+/* Sunshine Yellow */
+.bg-sunshine-yellow-500,
+.has-sunshine-yellow-500-background-color {
+	--focus-outline: theme(colors.deep-ocean-blue.700);
+}
+.bg-sunshine-yellow-600,
+.has-sunshine-yellow-600-background-color {
+	--focus-outline: theme(colors.deep-ocean-blue.800);
+}
+.bg-sunshine-yellow-700,
+.has-sunshine-yellow-700-background-color {
+	--focus-outline: theme(colors.deep-ocean-blue.900);
+}
+
+/* Neutral */
+.bg-neutral-500,
+.has-neutral-500-background-color {
+	--focus-outline: theme(colors.forest-green.600);
+}
+.bg-neutral-600,
+.has-neutral-600-background-color {
+	--focus-outline: theme(colors.forest-green.700);
+}
+
+/* Gretter */
+.bg-gretter-50,
+.has-gretter-50-background-color {
+	--focus-outline: theme(colors.forest-green.600);
+}
+.bg-gretter-100,
+.has-gretter-100-background-color {
+	--focus-outline: theme(colors.forest-green.500);
+}
+.bg-gretter-900,
+.has-gretter-900-background-color {
+	--focus-outline: theme(colors.electric-green.500);
+}
+
+/* Gray */
+.bg-gray-500,
+.has-gray-500-background-color {
+	--focus-outline: theme(colors.electric-green.500);
+}
+.bg-gray-600,
+.has-gray-600-background-color {
+	--focus-outline: theme(colors.electric-green.400);
+}
+.bg-gray-900,
+.has-gray-900-background-color {
+	--focus-outline: theme(colors.electric-green.300);
+}
+
+/* Black / White */
+.bg-black,
+.has-black-background-color {
+	--focus-outline: theme(colors.electric-green.500);
+}
+.bg-white,
+.has-white-background-color {
+	--focus-outline: theme(colors.forest-green.500);
+}
+
+/* Transparent */
+.bg-transparent,
+.has-transparent-background-color {
+	--focus-outline: theme(colors.white);
+}
