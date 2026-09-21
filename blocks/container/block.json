@@ -1,0 +1,54 @@
+{
+    "name": "hiyield/container",
+    "title": "Container Block",
+    "description": "The container block adds spacing around its content, it can also have a background image/colour behind the content.",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "layout",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "container.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "padding": {
+                        "top": "var:preset|spacing|64px",
+                        "bottom": "var:preset|spacing|64px"
+
+                    }
+                }
+            }
+        }
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

@@ -1,0 +1,147 @@
+{
+    "key": "block_custom_heading_key",
+    "title": "Heading With Icons Block",
+    "fields": [
+        {
+            "key": "block_custom_heading_asterisk_key",
+            "label": "Add Asterisk?",
+            "name": "block_custom_heading_asterisk",
+            "type": "true_false",
+            "instructions": "Choose if the heading should have an asterisk",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No",
+            "default_value": 0
+        },
+        {
+            "key": "block_custom_heading_asterisk_append_key",
+            "label": "Asterisk Position?",
+            "name": "block_custom_heading_asterisk_append",
+            "type": "true_false",
+            "instructions": "Choose if the asterisk should append or prepend the default heading",
+            "ui": 1,
+            "ui_on_text": "Append",
+            "ui_off_text": "Prepend",
+            "default_value": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_custom_heading_asterisk_key",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "block_custom_heading_hide_asterisk_on_mobile_key",
+            "label": "Hide Asterisk on Mobile?",
+            "name": "block_custom_heading_hide_asterisk_on_mobile",
+            "type": "true_false",
+            "ui": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_custom_heading_asterisk_key",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "block_custom_heading_hide_on_mobile_key",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "block_custom_heading_icon_key",
+            "label": "Choose Icon",
+            "name": "block_custom_heading_icon",
+            "type": "select",
+            "choices": []
+        },
+        {
+            "key": "block_custom_heading_icon_append_key",
+            "label": "Heading Icon Position?",
+            "name": "block_custom_heading_icon_append",
+            "type": "true_false",
+            "instructions": "Choose if the icon should append or prepend the default heading",
+            "ui": 1,
+            "ui_on_text": "Append",
+            "ui_off_text": "Prepend",
+            "default_value": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_custom_heading_icon_key",
+                        "operator": "!=",
+                        "value": "0"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "block_custom_heading_icon_colour_key",
+            "label": "Choose Icon Colour",
+            "name": "block_custom_heading_icon_colour",
+            "type": "select",
+            "choices": [],
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_custom_heading_icon_key",
+                        "operator": "!=",
+                        "value": "0"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "block_custom_heading_icon_size_key",
+            "label": "Choose Icon Size",
+            "name": "block_custom_heading_icon_size",
+            "type": "select",
+            "choices": {
+                "sm": "Small",
+                "md": "Medium",
+                "lg": "Large"
+            },
+            "default_value": "lg",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_custom_heading_icon_key",
+                        "operator": "!=",
+                        "value": "0"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "block_custom_heading_hide_on_mobile_key",
+            "label": "Hide Heading on Mobile?",
+            "name": "block_custom_heading_hide_on_mobile",
+            "type": "true_false",
+            "ui": true
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/custom-heading"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

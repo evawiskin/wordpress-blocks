@@ -1,0 +1,64 @@
+{
+    "key": "block_hero_accordion_key",
+    "title": "Hero with accordion",
+    "fields": [
+        {
+            "key": "block_hero_accordion_repeater_key",
+            "label": "Accordion",
+            "name": "block_hero_accordion_repeater",
+            "type": "repeater",
+            "instructions": "Accordion with section",
+            "button_label": "Add tab",
+            "sub_fields": [
+                {
+                    "key": "block_hero_accordion_repeater_title_key",
+                    "name": "block_hero_accordion_repeater_title",
+                    "label": "Title",
+                    "type": "text",
+                    "instructions": "Enter a title of this tab"
+                },
+                {
+                    "key": "block_hero_accordion_repeater_desc_key",
+                    "name": "block_hero_accordion_repeater_desc",
+                    "label": "Description",
+                    "type": "textarea",
+                    "instructions": "Enter a description of this tab"
+                }
+            ]
+        },
+        {
+            "key": "block_hero_accordion_image_key",
+            "label": "Image",
+            "name": "block_hero_accordion_image",
+            "type": "image",
+            "instructions": "Upload an image. This will be used on the front end as whole right column image",
+            "return_format": "id"
+        },
+        {
+            "key": "block_hero_accordion_image_mobile_key",
+            "label": "Image for mobile",
+            "name": "block_hero_accordion_image_mobile",
+            "type": "image",
+            "instructions": "Upload an image for mobile",
+            "return_format": "id"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/hero-accordion"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

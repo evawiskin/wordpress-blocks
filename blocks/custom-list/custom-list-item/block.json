@@ -1,0 +1,37 @@
+{
+    "name": "hiyield/custom-list-item",
+    "title": "Custom List Item",
+    "description": "An item for the custom list, containing an icon and text.",
+    "category": "text",
+    "icon": "marker",
+    "apiVersion": 2,
+    "parent": ["hiyield/custom-list"],
+    "keywords": ["list", "item", "icon"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "custom-list-item.php"
+    },
+    "supports": {
+        "reusable": false,
+        "html": false,
+        "color": {
+            "text": true
+        },
+        "jsx": true,
+        "spacing": {
+            "margin": true
+        }
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "margin": {
+                        "bottom": "var:preset|spacing|sm"
+                    }
+                }
+            }
+        }
+    }
+}

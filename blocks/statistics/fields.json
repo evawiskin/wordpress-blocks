@@ -1,0 +1,61 @@
+{
+    "key": "block_statistics_key",
+    "title": "Statistics Block",
+    "fields": [
+        {
+            "key": "block_statistics_repeater_key",
+            "label": "Statistics",
+            "name": "block_statistics_repeater",
+            "type": "repeater",
+            "button_label": "Add Statistic",
+            "min": 1,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "block_statistics_repeater_number_prefix_key",
+                    "label": "Number Prefix",
+                    "name": "block_statistics_repeater_number_prefix",
+                    "type": "text"
+                },
+                {
+                    "key": "block_statistics_repeater_number_key",
+                    "label": "Number",
+                    "name": "block_statistics_repeater_number",
+                    "type": "number",
+                    "required": 1
+                },
+                {
+                    "key": "block_statistics_repeater_number_suffix_key",
+                    "label": "Number Suffix",
+                    "name": "block_statistics_repeater_number_suffix",
+                    "type": "text"
+                },
+                {
+                    "key": "block_statistics_repeater_label_key",
+                    "label": "Label",
+                    "name": "block_statistics_repeater_label",
+                    "type": "text",
+                    "required": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/statistics"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

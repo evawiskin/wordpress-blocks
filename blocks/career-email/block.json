@@ -1,0 +1,38 @@
+{
+    "name": "hiyield/career-email",
+    "title": "Career's Contact Email",
+    "description": "",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "email",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "career-email.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

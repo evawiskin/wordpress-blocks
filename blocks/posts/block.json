@@ -1,0 +1,42 @@
+{
+    "name": "hiyield/posts",
+    "title": "Posts",
+    "description": "",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "admin-post",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "posts.php",
+		"postTypes": [
+			"post",
+			"page"
+		]
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

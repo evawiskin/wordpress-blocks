@@ -1,0 +1,43 @@
+{
+    "key": "block_50_50_key",
+    "title": "50 / 50 Block",
+    "fields": [
+        {
+            "key": "block_50_50_direction_key",
+            "label": "Block Layout",
+            "name": "block_50_50_direction",
+            "type": "true_false",
+            "instructions": "Select the layout of the block.",
+            "required": 0,
+            "ui": 1,
+            "ui_on_text": "Image first",
+            "ui_off_text": "Text first"
+        },
+        {
+            "key": "block_50_50_image_key",
+            "label": "Block Image",
+            "name": "block_50_50_image",
+            "type": "image",
+            "instructions": "Select an image for the block.",
+            "return_format": "id"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/split-content"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

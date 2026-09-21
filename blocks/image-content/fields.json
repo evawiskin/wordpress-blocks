@@ -1,0 +1,105 @@
+{
+	"key": "block_image_content",
+	"title": "Image Content Block",
+	"fields": [
+			{
+				"key": "block_image_content_image_settings_tab",
+				"label": "Block Image Settings",
+				"type": "tab"           
+			},
+			{
+				"key": "block_image_content_image_key",
+				"label": "Image",
+				"name": "block_image_content_image",
+				"type": "image",
+				"instructions": "Upload an image to display in the block.",
+				"return_format": "id",
+				"wrapper": {
+					"width": "50%"
+				}
+			},
+			{
+				"key": "block_image_content_aspect_ratio_key",
+				"label": "Aspect Ratio",
+				"name": "block_image_content_aspect_ratio",
+				"type": "select",
+				"instructions": "Choose the aspect ratio for the image.",
+				"choices": {
+					"aspect-1": "1:1 - Square",
+					"aspect-w-3 aspect-h-2": "3:2",
+					"aspect-w-4 aspect-h-5": "4:5",
+					"aspect-w-5 aspect-h-3": "5:3",
+					"aspect-w-9 aspect-h-16": "9:16",
+					"aspect-w-16 aspect-h-9": "16:9",
+					"h-full": "Fit height of content area / free"
+				},
+				"wrapper": {
+					"width": "50%"
+				},
+				"default_value": "aspect-w-3 aspect-h-2"
+			},		
+			{
+				"key": "block_image_content_object_fit_key",
+				"label": "Object Fit",
+				"name": "block_image_content_object_fit",
+				"type": "select",
+				"instructions": "Choose how the image should fit within the block.",
+				"choices": {
+					"object-cover": "Cover",
+					"object-contain": "Contain",
+					"object-fill": "Fill",
+					"object-none": "None",
+					"object-scale-down": "Scale Down"
+				},
+				"wrapper": {
+					"width": "50%"
+				}
+			},
+			{
+				"key": "block_image_content_image_order_key",
+				"label": "Image Order",
+				"name": "block_image_content_image_order",
+				"type": "true_false",
+				"instructions": "Check this box if you want the image to appear on the right side of the content.",
+				"ui": 1,
+				"ui_on_text": "Right",
+				"ui_off_text": "Left",
+				"wrapper": {
+					"width": "50%"
+				}
+			},
+			{
+				"key": "block_image_content_image_break_out_key",
+				"label": "Break Out Image?",
+				"name": "block_image_content_image_break_out",
+				"type": "true_false",
+				"instructions": "Check this box if you want the image to break out of the content container, and bleed to the edge of the screen.",
+				"ui": 1,
+				"wrapper": {
+					"width": "50%"
+				}
+			},
+			{
+				"key": "block_image_content_image_mobile_order_key",
+				"label": "Mobile Image Order",
+				"name": "block_image_content_image_mobile_order",
+				"type": "true_false",
+				"instructions": "Check this box if you want the image to appear above the content on mobile devices.",
+				"ui": 1,
+				"ui_on_text": "Above",
+				"ui_off_text": "Below",
+				"wrapper": {
+					"width": "50%"
+				}
+			}
+	],
+	"location": [
+		[
+			{
+				"param": "block",
+				"operator": "==",
+				"value": "hiyield\/image-content"
+			}
+		]
+	]
+}

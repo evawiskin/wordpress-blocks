@@ -1,0 +1,33 @@
+{
+    "key": "block_columns",
+    "title": "Columns Block",
+    "fields": [
+        {
+            "key": "block_columns_layout_tab",
+            "label": "Layout",
+            "type": "tab"
+        },
+        {
+            "key": "block_columns_count_key",
+            "name": "block_columns_count",
+            "label": "Columns",
+            "type": "select",
+            "instructions": "Select the number of columns for this block. After changing the number of columns you will need to save and refresh the editor to see the correct layout.",
+            "choices": {
+                "2": "Two Columns",
+                "3": "Three Columns",
+                "4": "Four Columns"
+            },
+            "default_value": "2"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/columns2"
+            }
+        ]
+    ]
+}

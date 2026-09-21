@@ -1,0 +1,36 @@
+{
+    "name": "hiyield/video",
+    "title": "Video Block",
+    "description": "Add a video preview thumbnail that opens up a video of you choice",
+    "category": "custom-layout",
+    "icon": "video-alt3",
+    "apiVersion": 2,
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "video.php",
+		"postTypes": [
+			"post",
+			"page"
+		]
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": false,
+            "background": true,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/main/json/block.json",
+    "name": "hiyield/columns2",
+    "title": "Columns Block V2 2025",
+    "description": "Enables building column layouts which can contain nested blocks. Uses a 12 column grid, and supports columns spanning various different widths.",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "grid-view",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "columns.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": true,
+        "color": {
+            "text": true,
+            "background": true,
+            "gradients": true
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "margin": {
+                        "top": "var:preset|spacing|64px",
+                        "bottom": "var:preset|spacing|64px"
+
+                    }
+                }
+            }
+        }
+    },
+    "providesContext": {
+        "acf/fields": "data",
+        "backgroundColor": "backgroundColor",
+        "style": "style"
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "preview": true
+            }
+        }
+    }
+}

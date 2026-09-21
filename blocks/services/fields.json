@@ -1,0 +1,106 @@
+{
+    "key": "block_services_key",
+    "title": "Services block",
+    "fields": [
+        {
+            "key": "block_services_terms_repeater_key",
+            "label": "Choose services to show",
+            "name": "block_services_terms_repeater",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add Service",
+            "wrapper": {
+                "width": "100"
+            },
+            "min": 0,
+            "max": 3,
+            "sub_fields": [
+                {
+                    "key": "block_services_terms_select_key",
+                    "name": "block_services_terms_select",
+                    "label": "Choose service to show",
+                    "type": "taxonomy",
+                    "taxonomy": "service",
+                    "field_type": "select",
+                    "return_format": "object",
+                    "multiple": 0,
+                    "instructions": "Choose service to show",
+                    "wrapper": {
+                        "width": "33"
+                    }
+                },
+                {
+                    "key": "block_services_terms_use_custom_link_key",
+                    "label": "Use custom link?",
+                    "name": "block_services_terms_use_custom_link",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Use custom link?",
+                    "ui": "1",
+                    "ui_on_text": "Yes",
+                    "ui_off_text": "No",
+                    "default_value": 0,
+                    "wrapper": {
+                        "width": "33"
+                    }
+                },
+                {
+					"key": "block_services_terms_custom_link_key",
+					"name": "block_services_terms_custom_link",
+					"type": "link",
+					"label": "Custom link",
+                    "wrapper": {
+                        "width": "33"
+                    },
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "block_services_terms_use_custom_link_key",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ]
+				}
+            ]
+        },
+        {
+            "key": "block_services_card_bg_color_key",
+            "label": "Card background color",
+            "name": "block_services_card_bg_color",
+            "aria-label": "",
+            "type": "select",
+            "choices": [],
+            "instructions": "Select card background color"
+        },
+        {
+            "key": "block_services_asterisk_key",
+            "label": "Show Asterisk?",
+            "name": "block_services_asterisk",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Show Asterisk?",
+            "ui": "1",
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/services"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

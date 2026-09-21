@@ -1,0 +1,38 @@
+{
+    "name": "hiyield/heading-carousel",
+    "title": "Heading Carousel",
+    "description": "A Heading that cycles through a list of headings",
+    "style": "",
+    "script": "",
+    "category": "text",
+    "icon": "heading",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "heading-carousel.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "alignContent": false,
+        "color": {
+            "text": false,
+            "background": false,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "name": "hiyield/content-slider-item",
+    "parent": [ "hiyield/content-slider" ],
+    "title": "Slide",
+    "description": "A block that creates single slide",
+    "style": "",
+    "script": "",
+    "category": "design",
+    "icon": "image",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "content-slider-item.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "alignContent": false,
+        "color": {
+            "text": false,
+            "background": true,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {}
+}

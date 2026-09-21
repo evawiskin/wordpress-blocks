@@ -1,0 +1,38 @@
+{
+    "key": "block_contact_key",
+    "title": "Contact Block",
+    "fields": [
+        {  
+            "key": "block_contact_schedule_call_tab",
+            "label": "Schedule Call",
+            "type": "tab"
+        },
+        {
+            "key": "block_contact_schedule_call_image_key",
+            "label": "Schedule Call Image",
+            "name": "block_contact_schedule_call_image",
+            "type": "image",
+            "return_format": "id",
+            "library": "all",
+            "preview_size": "medium"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/contact"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

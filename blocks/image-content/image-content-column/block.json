@@ -1,0 +1,57 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/main/json/block.json",
+    "name": "hiyield/image-content-column",
+    "title": "Image Content Column",
+    "description": "",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "parent": ["hiyield/image-content"],
+    "icon": "columns",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+    "mode": "preview",
+    "renderTemplate": "image-content-column.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "usesContext": ["acf/fields"],
+    "example": {
+        "attributes": {
+            "data": {
+                "preview": true
+            }
+        }
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "padding": {
+                        "top": "var:preset|spacing|xl",
+                        "bottom": "var:preset|spacing|xl"
+
+                    }
+                }
+            }
+        }
+    }
+}

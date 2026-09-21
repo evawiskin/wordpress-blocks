@@ -1,0 +1,104 @@
+{
+    "key": "block_cta_hero_key",
+    "title": "Content hero block with asterisk",
+    "fields": [
+        {
+            "key": "block_cta_hero_media_type_key",
+            "label": "Media Type",
+            "name": "block_cta_hero_media_type",
+            "type": "select",
+            "instructions": "Choose the type of media to display.",
+            "required": 1,
+            "conditional_logic": 0,
+            "choices": {
+                "image": "Image",
+                "lottie": "Lottie File"
+            },
+            "default_value": "image",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "block_cta_hero_image_key",
+            "label": "Image",
+            "name": "block_cta_hero_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                {
+                    "field": "block_cta_hero_media_type_key",
+                    "operator": "==",
+                    "value": "image"
+                }
+            ],
+            "return_format": "id"
+        },
+        {
+            "key": "block_cta_hero_lottie_key",
+            "label": "Lottie File",
+            "name": "block_cta_hero_lottie",
+            "type": "file",
+            "instructions": "Upload a Lottie animation file.",
+            "required": 0,
+            "conditional_logic": [
+                {
+                    "field": "block_cta_hero_media_type_key",
+                    "operator": "==",
+                    "value": "lottie"
+                }
+            ],
+            "return_format": "url",
+            "mime_types": "json"
+        },
+        {
+            "key": "block_cta_hero_show_on_mobile_key",
+            "label": "Show on Mobile",
+            "name": "block_cta_hero_show_on_mobile",
+            "type": "true_false",
+            "instructions": "Show the Lottie animation on mobile devices.",
+            "return_format": "value"
+        },
+        {
+            "key": "block_cta_hero_lottie_animation_speed_key",
+            "label": "Animation Speed",
+            "name": "block_cta_hero_lottie_animation_speed",
+            "type": "number",
+            "instructions": "Set the speed of the Lottie animation: 0 - 1 is slower, 1 is normal, 1 - 1.5 is faster.",
+            "required": 0,
+            "conditional_logic": [
+                {
+                    "field": "block_cta_hero_media_type_key",
+                    "operator": "==",
+                    "value": "lottie"
+                }
+            ],
+            "default_value": 1,
+            "placeholder": "1",
+            "min": 0,
+            "max": 1.5
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/cta-hero"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

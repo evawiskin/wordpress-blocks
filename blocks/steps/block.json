@@ -1,0 +1,36 @@
+{
+    "name": "hiyield/steps",
+    "title": "Steps block",
+    "description": "A block that creates steps with other blocks",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "steple-row-after",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "steps.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

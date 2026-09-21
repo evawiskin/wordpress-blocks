@@ -1,0 +1,42 @@
+{
+    "name": "hiyield/form",
+    "title": "Form Block",
+    "description": "A block that displays a Form",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "feedback",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "form.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

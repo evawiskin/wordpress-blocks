@@ -1,0 +1,22 @@
+{
+    "key": "block_video_key",
+    "title": "Video",
+    "fields": [
+		{
+			"key": "block_video_banner_file_key",
+			"name": "block_video_banner_file",
+			"type": "file",
+			"label": "Upload a Video",
+			"mime_types": "mp4, mov, webm"
+		}
+	],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/video-banner"
+            }
+        ]
+    ]
+}

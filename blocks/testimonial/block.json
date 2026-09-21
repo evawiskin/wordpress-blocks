@@ -1,0 +1,38 @@
+{
+    "name": "hiyield/testimonial",
+    "title": "Inline Testimonial",
+    "description": "Add a quoted testimonial",
+    "category": "text",
+    "icon": "format-quote",
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "testimonial.php",
+		"postTypes": [
+			"post",
+			"page",
+			"person",
+            "service",
+            "work"
+		]
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

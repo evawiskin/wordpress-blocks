@@ -1,0 +1,49 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/main/json/block.json",
+    "name": "hiyield/column2",
+    "title": "Column",
+    "description": "",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "parent": [ "hiyield/columns2"],
+    "icon": "columns",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+    "mode": "preview",
+    "renderTemplate": "column.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": true,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "usesContext": ["acf/fields", "backgroundColor", "style"],
+    "providesContext": {
+        "backgroundColor": "backgroundColor",
+        "style": "style"
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "preview": true
+            }
+        }
+    },
+    "attributes": {
+    }
+}

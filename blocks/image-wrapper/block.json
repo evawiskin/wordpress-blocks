@@ -1,0 +1,45 @@
+{
+    "name": "hiyield/image-wrapper",
+    "title": "Image",
+    "description": "This block wraps the core WordPress image block and allows for background colors behind your image",
+    "style": "",
+    "script": "",
+    "category": "media",
+    "icon": "format-image",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "image-wrapper.php"
+    },
+    "styles": [],
+    "supports": {
+		"jsx": true,
+        "align": false,
+        "anchor": true,
+        "color": {
+            "background": true
+        }
+    },
+    "attributes": {
+		"allowResize": {
+			"type": "boolean",
+			"default": true
+		},
+        "fixedHeight": {
+            "type": "boolean",
+            "default": true
+        }
+	},
+	"providesContext": {
+		"allowResize": "allowResize",
+        "fixedHeight": "fixedHeight"
+	},
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

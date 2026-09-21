@@ -1,0 +1,24 @@
+{
+    "key": "block_gated_access_form",
+    "title": "Gated Access Form",
+    "fields": [
+        {
+            "key": "block_gated_access_form_message_key",
+            "label": "Download File",
+            "name": "block_gated_access_form_message",
+            "type": "message",
+            "message": "The download file is set at the post level. Go to <strong>Resource Details</strong> in the sidebar and upload the file to the <strong>Download File</strong> field.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/gated-access-form"
+            }
+        ]
+    ]
+}

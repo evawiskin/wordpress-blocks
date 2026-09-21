@@ -1,0 +1,32 @@
+{
+    "name": "hiyield/column",
+    "title": "Column",
+    "description": "",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "parent": [ "hiyield/columns" ],
+    "icon": "columns",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "column.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": true,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    }
+}

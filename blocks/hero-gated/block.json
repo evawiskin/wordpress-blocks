@@ -1,0 +1,48 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/main/json/block.json",
+    "name": "hiyield/hero-gated",
+    "title": "Hero Gated",
+    "description": "This template locked hero block is used to display a prominent hero section with gated content features.",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "superhero",
+    "apiVersion": 2,
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "hero-gated.php"
+    },
+    "styles": [],
+    "supports": {
+        "anchor": true,
+        "align": false,
+        "color": {
+            "text": true,
+            "background": true
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "padding": {
+                        "top": "var:preset|spacing|64px",
+                        "bottom": "var:preset|spacing|64px"
+                    }
+                }
+            }
+        }
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "preview": true
+            }
+        }
+    }
+}

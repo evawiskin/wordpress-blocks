@@ -1,0 +1,55 @@
+{
+    "name": "hiyield/hero-simple",
+    "title": "Simple Hero",
+    "description": "Centred eyebrow text and heading on a coloured background.",
+    "category": "custom-layout",
+    "icon": "align-center",
+    "apiVersion": 2,
+    "keywords": ["hero", "heading", "simple"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "hero-simple.php"
+    },
+    "styles": [],
+    "supports": {
+        "anchor": true,
+        "align": false,
+        "color": {
+            "text": true,
+            "background": true
+        },
+        "spacing": {
+            "padding": true,
+            "margin": true
+        },
+        "jsx": true
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "padding": {
+                        "top": "var:preset|spacing|96px",
+                        "bottom": "var:preset|spacing|96px"
+                    }
+                }
+            }
+        },
+        "backgroundColor": {
+            "type": "string",
+            "default": "forest-green-600"
+        },
+        "textColor": {
+            "type": "string",
+            "default": "gretter-50"
+        }
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

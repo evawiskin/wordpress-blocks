@@ -1,0 +1,26 @@
+{
+    "name": "hiyield/custom-list",
+    "title": "Custom List",
+    "description": "A custom list with icon and text items.",
+    "category": "text",
+    "icon": "list-view",
+    "apiVersion": 2,
+    "keywords": ["list", "icon"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "custom-list.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "color": {
+            "text": true,
+            "background": true
+        },
+        "spacing": {
+            "padding": true,
+            "margin": true
+        },
+        "jsx": true
+    }
+}

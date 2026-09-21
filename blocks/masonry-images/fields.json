@@ -1,0 +1,22 @@
+{
+    "key": "block_masonry_images_key",
+    "title": "Masonry Images Block",
+    "fields": [
+        {
+            "key": "block_masonry_images_images_select_key",
+            "name": "block_masonry_images_images_select",
+            "label": "Select Images",
+            "type": "gallery",
+            "return_format": "id"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/masonry-images"
+            }
+        ]
+    ]
+}

@@ -1,0 +1,117 @@
+{
+    "key": "block_slider_captions",
+    "title": "Image slider with Captions",
+    "fields": [
+        {
+            "key": "block_slider_captions_repeater_key",
+            "label": "Slides",
+            "name": "block_slider_captions_repeater",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add slide",
+            "wrapper": {
+                "width": "100"
+            },
+            "sub_fields": [
+                {
+					"key": "block_slider_captions_repeater_acc_key",
+					"name": "block_slider_captions_repeater_acc",
+					"type": "accordion",
+					"label": "Slide"
+				},
+                {
+                    "key": "block_slider_captions_repeater_image_key",
+                    "label": "Image",
+                    "name": "block_slider_captions_repeater_image",
+                    "type": "image",
+                    "return_format": "id",
+                    "wrapper": {
+                        "width": "25"
+                    }
+                },
+                {
+                    "key": "block_slider_captions_repeater_caption_key",
+                    "label": "Caption",
+                    "name": "block_slider_captions_repeater_caption",
+                    "type": "text",
+                    "wrapper": {
+                        "width": "75"
+                    }
+                }
+            ]
+        },
+		{
+			"key": "block_slider_captions_content_key",
+			"label": "Content area",
+			"name": "block_slider_captions_content",
+			"aria-label": "",
+			"type": "wysiwyg",
+			"instructions": "",
+			"required": 1,
+			"tabs": "all",
+            "toolbar": "full",
+			"wrapper": {
+				"width": "100%"
+			}
+		},
+        {
+            "key": "block_slider_captions_banner_show_key",
+            "name": "block_slider_captions_banner_show",
+            "label": "Show overlap banner?",
+            "type": "true_false",
+            "default_value": 1,
+            "ui": 1
+        },
+        {
+			"key": "block_slider_captions_banner_image_key",
+			"label": "Banner image",
+			"name": "block_slider_captions_banner_image",
+			"type": "image",
+			"return_format": "id",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_slider_captions_banner_show_key",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+		},
+        {
+			"key": "block_slider_captions_banner_content_key",
+			"label": "Banner content",
+			"name": "block_slider_captions_banner_content",
+			"type": "wysiwyg",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_slider_captions_banner_show_key",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+		}
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/slider-captions"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

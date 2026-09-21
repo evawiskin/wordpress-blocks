@@ -1,0 +1,30 @@
+{
+    "key": "block_card",
+    "title": "Card",
+    "fields": [
+        {
+            "key": "block_card_link",
+            "label": "Card Link",
+            "name": "block_card_link",
+            "type": "link",
+            "instructions": "Add a link to make the entire card clickable. IMPORTANT: Ensure there are no other links inside the card content to avoid breaking the HTML structure."
+        },
+        {
+            "key": "block_card_image",
+            "label": "Card Image",
+            "name": "block_card_image",
+            "type": "image",
+            "return_format": "id",
+            "instructions": "Add an image to display at the top of the card. Aspect ratio is 16:9"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/card"
+            }
+        ]
+    ]
+}

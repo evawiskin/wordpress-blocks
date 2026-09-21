@@ -1,0 +1,80 @@
+{
+    "key": "block_tile",
+    "title": "Tile",
+    "fields": [
+    {
+        "key": "block_tile_show_index",
+        "label": "Show Index Number",
+        "name": "block_tile_show_index",
+        "type": "number",
+        "instructions": "Enter a number to display in a circle at the top of this tile.",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+        },
+        "default_value": "",
+        "placeholder": "e.g. 1, 2, 3...",
+        "prepend": "",
+        "append": "",
+        "min": 1,
+        "max": "",
+        "step": ""
+    },
+    {
+        "key": "block_tile_border_color",
+        "label": "Index Circle Border Color",
+        "name": "block_tile_border_color",
+        "type": "select",
+        "instructions": "Choose the border color for the index circle from theme colors.",
+        "required": 0,
+        "conditional_logic": [
+            [
+                {
+                    "field": "block_tile_show_index",
+                    "operator": ">",
+                    "value": "0"
+                }
+            ]
+        ],
+        "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+        },
+        "choices": {},
+        "default_value": "white",
+        "multiple": 0,
+        "ui": 1,
+        "ajax": 0,
+        "return_format": "value",
+        "placeholder": ""
+    },
+    {
+        "key": "block_tile_link",
+        "label": "Tile Link",
+        "name": "block_tile_link",
+        "type": "link",
+        "instructions": "Add a link to make the entire tile clickable. IMPORTANT: Ensure there are no other links inside the tile content to avoid breaking the HTML structure.",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "return_format": "array"
+    }
+],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/tile"
+            }
+        ]
+    ]
+}

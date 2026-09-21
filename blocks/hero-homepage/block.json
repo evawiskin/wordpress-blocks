@@ -1,0 +1,53 @@
+{
+    "name": "hiyield/hero-homepage",
+    "title": "Hero Homepage",
+    "description": "",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "layout",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "hero-homepage.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "padding": true,
+            "margin": true
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "padding": {
+                        "top": "var:preset|spacing|64px",
+                        "bottom": "var:preset|spacing|64px"
+                    }
+                }
+            }
+        }
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

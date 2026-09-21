@@ -1,0 +1,38 @@
+{
+    "name": "hiyield/related-people",
+    "title": "Related People Block",
+    "description": "The related people block adds related team members",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "admin-users",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "related-people.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

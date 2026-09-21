@@ -1,0 +1,58 @@
+{
+    "key": "block_step",
+    "title": "Step",
+    "fields": [
+        {
+            "key": "block_step_header_key",
+            "name": "block_step_header",
+            "label": "Step Header",
+            "type": "text",
+            "required": 1
+        },
+        {
+            "key": "block_step_icon_key",
+            "label": "Icon",
+            "name": "block_step_icon",
+            "aria-label": "",
+            "type": "select",
+            "choices": [],
+            "instructions": "Select the icon to use for this step.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "block_step_icon_after_text_key",
+            "label": "Icon Before or After Text?",
+            "name": "block_step_icon_after_text",
+            "aria-label": "",
+            "type": "true_false",
+            "ui": 1,
+            "ui_on_text": "After",
+            "ui_off_text": "Before",
+            "default": 1,
+            "wrapper": {
+                "width": "50"
+            }
+        }
+
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/step"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

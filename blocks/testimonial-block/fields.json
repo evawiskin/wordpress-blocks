@@ -1,0 +1,31 @@
+{
+    "key": "block_testimonial_block",
+    "title": "Testimonial Block",
+    "fields": [
+		{
+			"key" : "block_testimonial_block_testimonial_key",
+			"name" : "block_testimonial_block_testimonial",
+			"label": "Choose Testimonial",
+			"type": "post_object",
+			"post_type": "testimonial",
+			"return_format": "id"
+		},
+        {
+            "key": "block_testimonial_block_accent_colour_key",
+            "label": "Testimonial Accent Colour",
+            "name": "block_testimonial_block_accent_colour",
+            "type": "select",
+            "choices": [],
+            "return_format": "value"
+        }
+	],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/testimonial-block"
+            }
+        ]
+    ]
+}

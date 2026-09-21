@@ -1,0 +1,38 @@
+{
+    "name": "hiyield/locations",
+    "title": "Locations Block",
+    "description": "The locations block displays the locations set in the site options with text above.",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "layout",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "locations.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

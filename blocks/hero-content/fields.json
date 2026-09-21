@@ -1,0 +1,59 @@
+{
+    "key": "block_content_hero_key",
+    "title": "Content hero block with asterisk",
+    "fields": [
+        {
+            "key": "block_content_hero_container_size_key",
+            "label": "Container size",
+            "name": "block_content_hero_container_size",
+            "type": "radio",
+            "choices": {
+                "inside-container-sm": "Small",
+                "inside-container-md": "Medium",
+                "inside-container-lg": "Large",
+                "inside-container-xl": "XL",
+                "inside-container-2xl": "2XL"
+            },
+            "default_value": "inside-container-lg",
+            "return_format": "value"
+        },
+        {
+            "key": "block_content_hero_overflow_y_key",
+            "label": "Allow Asterisk Overflow? (Vertical)",
+            "name": "block_content_hero_overflow_y",
+            "type": "true_false",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "block_content_hero_overflow_y_key",
+            "label": "Allow Asterisk Overflow? (Vertical)",
+            "name": "block_content_hero_overflow_y",
+            "type": "true_false",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/content-hero"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

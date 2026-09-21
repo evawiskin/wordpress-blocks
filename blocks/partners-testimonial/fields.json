@@ -1,0 +1,76 @@
+{
+    "key": "block_partners_testimonial_key",
+    "title": "Partners Testimonial Block",
+    "fields": [
+        {
+            "key": "block_partners_testimonial_repeater_key",
+            "label": "Images",
+            "name": "block_partners_testimonial_repeater",
+            "aria-label": "",
+            "type": "repeater",
+            "button_label": "Add Image",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "block_partners_testimonial_repeater_partner_image_key",
+                    "label": "Image",
+                    "name": "block_partners_testimonial_repeater_partner_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id"
+                }
+            ]
+        },
+        {
+			"key" : "block_partners_testimonial_testimonial_select_key",
+			"name" : "block_partners_testimonial_testimonial_select",
+			"label": "Select Testimonial",
+			"type": "post_object",
+			"post_type": "testimonial",
+			"return_format": "id"
+		},
+        {
+			"key" : "block_partners_testimonial_testimonial_background_colour_key",
+			"name" : "block_partners_testimonial_testimonial_background_colour",
+			"label": "Testimonial Background Colour",
+            "aria-label": "",
+            "type": "select",
+            "choices": [],
+            "instructions": "Select testimonial background color"
+		},
+        {
+			"key" : "block_partners_testimonial_testimonial_accent_colour_key",
+			"name" : "block_partners_testimonial_testimonial_accent_colour",
+			"label": "Testimonial Accent Colour",
+            "aria-label": "",
+            "type": "select",
+            "choices": [],
+            "instructions": "Select testimonial accent color"
+		}
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/partners-testimonial"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

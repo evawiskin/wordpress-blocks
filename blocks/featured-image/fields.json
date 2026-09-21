@@ -1,0 +1,22 @@
+{
+    "key": "block_featured-image_key",
+    "title": "Featured Image Block",
+    "fields": [
+        {
+            "key": "block_featured_image_image_select_key",
+            "name": "block_featured_image_image_select",
+            "label": "Select Image",
+            "type": "image",
+            "return_format": "id"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/featured-image"
+            }
+        ]
+    ]
+}

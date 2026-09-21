@@ -1,0 +1,32 @@
+{
+    "name": "hiyield/address-list",
+    "title": "Address List Block",
+    "description": "Show a list of all business addresses set in site options.",
+    "category": "custom-layout",
+    "icon": "location-alt",
+    "apiVersion": 2,
+    "keywords": [],
+    "parent": ["hiyield/container", "hiyield/column"],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "address-list.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    }
+}

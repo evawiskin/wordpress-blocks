@@ -1,0 +1,45 @@
+{
+  "key": "block_work_carousel_key",
+  "title": "",
+  "fields": [
+    {
+      "key": "block_work_carousel_select_key",
+      "label": "Work Posts",
+      "name": "block_work_carousel_select",
+      "type": "post_object",
+      "instructions": "",
+      "post_type": ["work"],
+      "return_format": "ids",
+      "multiple": true
+    },
+    {
+      "key": "block_work_carousel_card_background_key",
+      "label": "Card Background",
+      "name": "block_work_carousel_card_background",
+      "type": "select",
+      "choices": {
+        "gretter-50": "Neutral",
+        "white": "White",
+        "forest-green-500": "Forest Green"
+      }
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "hiyield/work-carousel"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0
+}

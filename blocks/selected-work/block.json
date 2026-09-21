@@ -1,0 +1,42 @@
+{
+    "name": "hiyield/selected-work",
+    "title": "Selected Work",
+    "description": "A block that displays selected Work posts.",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "text",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "selected-work.php",
+        "postTypes": [
+			"page",
+            "service"
+		]
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

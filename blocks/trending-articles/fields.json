@@ -1,0 +1,46 @@
+{
+    "key": "block_trending_articles_key",
+    "title": "Trending Articles Block",
+    "fields": [
+        {
+            "key": "block_trending_articles_choose_articles_key",
+            "label": "Handpick Articles?",
+            "name": "block_trending_articles_choose_articles",
+            "instructions": "Check this field to override the selection of articles to display.",
+            "type": "true_false",
+            "ui": 1
+        },{
+            "key": "block_trending_articles_column_amount_key",
+            "label": "Four Columns?",
+            "name": "block_trending_articles_column_amount",
+            "instructions": "Check this field to change the blocks to have four columns on extra-large screens, instead of the default of two",
+            "type": "true_false",
+            "ui": 1
+        },
+        {
+            "key": "block_trending_articles_articles_select_key",
+            "label": "Choose Articles",
+            "name": "block_trending_articles_articles_select",
+            "type": "post_object",
+            "post_type": "post",
+            "multiple": 1,
+            "return_format": "id",
+            "conditional_logic": [
+                {
+                    "field": "block_trending_articles_choose_articles_key",
+                    "operator": "==",
+                    "value": "1"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/trending-articles"
+            }
+        ]
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "key": "block_career_email_contact_key",
+    "title": "Career Contact Email",
+    "fields": [
+        {
+            "key": "block_career_email_image_select_key",
+            "label": "Block image",
+            "name": "block_career_email_image_select",
+            "type": "image",
+            "return_format": "id"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/career-email"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

@@ -1,0 +1,35 @@
+{
+    "name": "hiyield/image-slider",
+    "title": "Image Slider",
+    "description": "",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "images-alt2",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "image-slider.php",
+		"postTypes": [
+			"post",
+			"page"
+		]
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": false,
+            "background": true,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    }
+}

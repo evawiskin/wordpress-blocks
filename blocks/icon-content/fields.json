@@ -1,0 +1,48 @@
+{
+    "key": "block_icon_content",
+    "title": "Icon",
+    "fields": [
+        {
+            "key": "block_icon_content_gap_key",
+            "name": "block_icon_content_gap",
+            "label": "Gap Between Icon and Content",
+            "type": "select",
+            "instructions": "Select the gap between the icon and the content.",
+            "choices": {
+                "gap-2": "Gap 2 (8px)",
+                "gap-4": "Gap 4 (16px)",
+                "gap-6": "Gap 6 (24px)",
+                "gap-8": "Gap 8 (32px)",
+                "gap-10": "Gap 10 (40px)"
+            },
+            "default_value": "gap-10"
+        },
+        {
+            "key": "block_icon_content_wrap_icon_key",
+            "name": "block_icon_content_wrap_icon",
+            "label": "Wrap Icon with Heading Text",
+            "type": "true_false",
+            "instructions": "Enable to make the icon wrap inline with the heading text (icon will appear at the end of the last line).",
+            "ui": 1,
+            "default_value": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/icon-content"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}
