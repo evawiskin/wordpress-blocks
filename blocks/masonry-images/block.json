@@ -1,0 +1,26 @@
+{
+    "name": "hiyield/masonry-images",
+    "title": "Masonry Images Block",
+    "description": "The masonry images block displays a grid of images of your choosing in a masonry layout.",
+    "category": "custom-layout",
+    "icon": "layout",
+    "apiVersion": 2,
+    "keywords": ["masonry", "images"],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "masonry-images.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": true,
+        "color": {
+            "text": false,
+            "background": true,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    }
+}

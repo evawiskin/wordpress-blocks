@@ -1,0 +1,32 @@
+{
+    "key": "block_locations_key",
+    "title": "Locations Block",
+    "fields": [
+        {
+            "key": "block_locations_has_light_background_key",
+            "name": "block_locations_has_light_background",
+            "label": "Block has light background?",
+            "type": "true_false",
+            "default_value": 0,
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/locations"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

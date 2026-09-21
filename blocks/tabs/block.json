@@ -1,0 +1,35 @@
+{
+    "name": "hiyield/tabs",
+    "title": "Tabs block",
+    "description": "A block that creates tabs with other blocks",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "table-row-after",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "tabs.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "alignContent": false,
+        "color": {
+            "text": false,
+            "background": false,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+        "tabLabelsArray":{
+            "type": "array",
+            "default": []
+        }
+    }
+}

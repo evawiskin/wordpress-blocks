@@ -1,0 +1,111 @@
+{
+    "key": "block_posts",
+    "title": "Posts",
+    "fields": [
+        {
+            "key": "block_posts_number_of_posts_key",
+            "label": "Number of Posts",
+            "name": "block_posts_number_of_posts",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "default_value": 3,
+            "min": 1,
+            "max": 6
+        },
+        {
+            "key": "block_posts_number_of_columns_key",
+            "label": "Number of Columns",
+            "name": "block_posts_number_of_columns",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "default_value": 3,
+            "min": 1,
+            "max": 4
+        },
+        {
+            "key": "block_posts_show_posts_by_key",
+            "label": "Show Posts by",
+            "name": "block_posts_show_posts_by",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "default_value": 0,
+            "ui_on_text": "Select Posts",
+            "ui_off_text": "Latest",
+            "ui": 1
+        },
+        {
+            "key": "block_posts_post_type_key",
+            "label": "Post Type",
+            "name": "block_posts_post_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_posts_show_posts_by_key",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "choices": [],
+            "default_value": false,
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "block_posts_select_posts_key",
+            "label": "Select Posts",
+            "name": "block_posts_select_posts",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_posts_show_posts_by_key",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "min": 1,
+            "max": 6
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/posts"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

@@ -1,0 +1,46 @@
+{
+    "name": "hiyield/gated-access-download-hero",
+    "title": "Gated Access Download Hero",
+    "description": "A hero block that reveals a download button only after the user has submitted the gated access form",
+    "category": "custom-layout",
+    "icon": "download",
+    "apiVersion": 2,
+    "keywords": ["download", "gated", "access"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "gated-access-download-hero.php"
+    },
+    "styles": [],
+    "supports": {
+        "anchor": true,
+        "align": false,
+        "color": {
+            "text": true,
+            "background": true
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "padding": {
+                        "top": "var:preset|spacing|64px",
+                        "bottom": "var:preset|spacing|64px"
+                    }
+                }
+            }
+        }
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

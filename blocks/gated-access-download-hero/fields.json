@@ -1,0 +1,44 @@
+{
+    "key": "block_gated_access_download_hero",
+    "title": "Gated Access Download Hero",
+    "fields": [
+        {
+            "key": "block_gated_access_download_hero_file_key",
+            "label": "Download File",
+            "name": "block_gated_access_download_hero_file",
+            "type": "file",
+            "instructions": "Upload the file users will receive after submitting the gated access form",
+            "required": 1,
+            "return_format": "url",
+            "library": "all"
+        },
+        {
+            "key": "block_gated_access_download_hero_button_text_key",
+            "label": "Button Text",
+            "name": "block_gated_access_download_hero_button_text",
+            "type": "text",
+            "instructions": "Text shown on the download button",
+            "default_value": "Download Now",
+            "required": 0
+        },
+        {
+            "key": "block_gated_access_download_hero_locked_message_key",
+            "label": "Locked Message",
+            "name": "block_gated_access_download_hero_locked_message",
+            "type": "textarea",
+            "instructions": "Message shown when the user has not yet submitted the form",
+            "default_value": "Please complete the form to access your download.",
+            "required": 0,
+            "rows": 3
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/gated-access-download-hero"
+            }
+        ]
+    ]
+}

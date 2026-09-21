@@ -1,0 +1,35 @@
+{
+    "key": "block_phases_key",
+    "title": "Phases block",
+    "fields": [
+        {
+            "key": "block_phases_terms_select_key",
+            "name": "block_phases_terms_select",
+            "label": "Choose phases to show",
+            "type": "taxonomy",
+            "taxonomy": "phase",
+            "field_type": "multi_select",
+            "return_format": "object",
+            "multiple": 1,
+            "instructions": "Choose phases to show in a row"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/phases"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

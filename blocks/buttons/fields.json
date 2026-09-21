@@ -1,0 +1,119 @@
+{
+    "key": "block_buttons_key",
+    "title": "Buttons",
+    "fields": [
+		{
+			"key": "block_buttons_buttons_layout_key",
+			"name": "block_buttons_buttons_layout",
+			"type": "true_false",
+			"label": "Button Layout",
+			"ui": true,
+			"ui_on_text": "Block",
+			"ui_off_text": "Inline"
+		},
+        {
+            "key": "block_buttons_button_repeater_key",
+            "name": "block_buttons_button_repeater_key",
+			"type": "repeater",
+            "button_label": "Add Button",
+            "layout": "block",
+            "sub_fields": [
+				{
+					"key": "block_buttons_button_repeater_accordion_key",
+					"name": "block_buttons_button_repeater_accordion",
+					"type": "accordion",
+					"label": "Button"
+				},
+				{
+					"key": "block_buttons_button_type_key",
+					"name": "block_buttons_button_type",
+					"type": "select",
+					"choices": {
+						"link": "Link a page",
+						"schedule_modal": "Open a modal",
+						"hubspot_chat": "Open HubSpot chat"
+					},
+					"instructions": "What should the button do?"
+				},
+				{
+					"key": "block_buttons_button_link_key",
+					"name": "block_buttons_button_link",
+					"type": "link",
+					"label": "Button Link",
+					"conditional_logic": [
+						[
+							{
+								"field": "block_buttons_button_type_key",
+								"operator": "==",
+								"value": "link"
+							}
+						]
+					]
+				},
+				{
+					"key": "block_buttons_button_text_key",
+					"name": "block_buttons_button_text",
+					"type": "text",
+					"label": "Button text",
+					"default_value": "Insert link",
+					"required": 0,
+					"conditional_logic": [
+						[
+							{
+								"field": "block_buttons_button_type_key",
+								"operator": "==",
+								"value": "schedule_modal"
+							}
+						],
+						[
+							{
+								"field": "block_buttons_button_type_key",
+								"operator": "==",
+								"value": "hubspot_chat"
+							}
+						]
+					]
+				},
+				{
+					"key": "block_buttons_button_style_key",
+					"name": "block_buttons_button_style",
+					"type": "select",
+					"label": "Button Style",
+					"choices": {
+						"hy-button-primary": "Primary",
+						"hy-button-secondary": "Secondary",
+						"hy-button-tertiary": "Tertiary",
+						"hy-button-outline": "Outline",
+						"hy-button-outline-neutral": "Outline Neutral",
+						"hy-button-link": "Standard Link (16px)",
+						"hy-button-link-sm": "Standard Link (12px)"
+					},
+					"default_value": "hy-button-primary"
+				},
+				{
+					"key": "block_buttons_button_icon_right_key",
+					"name": "block_buttons_button_icon_right",
+					"type": "select",
+					"label": "Icon Right",
+					"choices": []
+				},
+				{
+					"key": "block_buttons_button_icon_left_key",
+					"name": "block_buttons_button_icon_left",
+					"type": "select",
+					"label": "Icon Left",
+					"choices": []
+				}
+			]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/buttons"
+            }
+        ]
+    ]
+}

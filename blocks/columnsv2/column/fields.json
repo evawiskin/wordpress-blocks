@@ -1,0 +1,63 @@
+{
+    "key": "block_column",
+    "title": "Column Block",
+    "fields": [
+        {
+            "key": "block_column_span_key",
+            "name": "block_column_span",
+            "label": "Column Span Override",
+            "instructions": "Use this to override the default column span set in the parent Columns block to create unequal layouts.",
+            "type": "select",
+            "choices": {
+                "": "Default",
+                "3": "Three Columns",
+                "4": "Four Columns",
+                "5": "Five Columns",
+                "7": "Seven Columns",
+                "8": "Eight Columns",
+                "9": "Nine Columns",
+                "12": "Twelve Columns"
+            },
+            "default_value": ""
+        },
+        {
+            "key": "block_column_start_key",
+            "name": "block_column_start",
+            "label": "Column Start Position",
+            "instructions": "Set which grid line (1-9) this column should start at in the 12-column grid. For example, if the previous column spans 3 columns, and you want to create a 1-column gap before this column, set this to 5.",
+            "type": "select",
+            "choices": {
+                "": "Auto (Default)",
+                "1": "Start at grid line 1",
+                "2": "Start at grid line 2",
+                "3": "Start at grid line 3",
+                "4": "Start at grid line 4",
+                "5": "Start at grid line 5",
+                "6": "Start at grid line 6",
+                "7": "Start at grid line 7",
+                "8": "Start at grid line 8",
+                "9": "Start at grid line 9",
+                "10": "Start at grid line 10"
+            },
+            "default_value": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/column2"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

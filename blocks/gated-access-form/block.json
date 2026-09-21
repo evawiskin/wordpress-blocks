@@ -1,0 +1,46 @@
+{
+    "name": "hiyield/gated-access-form",
+    "title": "Gated Access Form",
+    "description": "A form to gate access to content",
+    "category": "custom-layout",
+    "icon": "feedback",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "gated-access-form.php"
+    },
+    "styles": [],
+    "supports": {
+        "anchor": true,
+        "align": false,
+        "color": {
+            "text": true,
+            "background": true
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "padding": {
+                        "top": "var:preset|spacing|64px",
+                        "bottom": "var:preset|spacing|64px"
+                    }
+                }
+            }
+        }
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "key": "block_industries_key",
+    "title": "Content hero block with asterisk",
+    "fields": [
+        {
+            "key": "block_industries_terms_select_key",
+            "name": "block_industries_terms_select",
+            "label": "Choose industries to show",
+            "type": "taxonomy",
+            "taxonomy": "industry",
+            "field_type": "multi_select",
+            "multiple": 1,
+            "instructions": "Choose industries or leave empty to show all",
+            "add_term": 0
+        },
+        {
+			"key": "block_industries_headings_color_key",
+			"label": "Headings color",
+			"name": "block_industries_headings_color",
+			"type": "select",
+			"choices": [],
+			"wrapper": {
+				"width": "33%"
+			}
+		},
+        {
+			"key": "block_industries_links_color_key",
+			"label": "Links color",
+			"name": "block_industries_links_color",
+			"type": "select",
+			"choices": [],
+			"wrapper": {
+				"width": "33%"
+			}
+		},
+        {
+			"key": "block_industries_asterisk_color_key",
+			"label": "Asterisk color",
+			"name": "block_industries_asterisk_color",
+			"type": "select",
+			"choices": [],
+			"wrapper": {
+				"width": "33%"
+			}
+		}
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/industries"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

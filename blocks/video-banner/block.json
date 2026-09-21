@@ -1,0 +1,37 @@
+{
+    "name": "hiyield/video-banner",
+    "title": "Video Banner Block",
+    "description": "Add a full-width video banner that auto-plays a looped silent video of your choice.",
+    "category": "custom-layout",
+    "icon": "video-alt3",
+    "apiVersion": 2,
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "video-banner.php",
+		"postTypes": [
+			"post",
+			"page",
+            "work"
+		]
+    },
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "alignContent": false,
+        "color": {
+            "text": false,
+            "background": false,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

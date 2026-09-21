@@ -1,0 +1,48 @@
+{
+    "key": "block_form",
+    "title": "Form Block",
+    "fields": [
+        {
+            "key": "block_form_select_form_key",
+            "name": "block_form_select_form",
+            "label": "Select Form to show",
+            "type": "select",
+            "choices": [],
+            "return_format": "value"
+        },
+        {
+            "key": "block_form_spacing_key",
+            "label": "Block Spacing",
+            "name": "block_form_spacing",
+            "type": "select",
+            "choices": {
+                "none": "None",
+                "sm": "Small - 8px / 16px",
+                "md": "Medium - 16px / 32px",
+                "lg": "Large - 24px / 48px",
+                "xl": "xl - 48px / 96px",
+                "2xl": "2xl - 56px / 112px"
+            },
+            "default_value": "xl",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/form"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

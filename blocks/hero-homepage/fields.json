@@ -1,0 +1,30 @@
+{
+  "key": "block_homepage_hero",
+  "title": "Homepage Hero Block",
+  "fields": [
+    {
+      "key": "block_homepage_hero_message_key",
+      "name": "block_homepage_hero_message_key",
+      "type": "message",
+      "message": "For the carousel, please add the first item in the heading."
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "hiyield/hero-homepage"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0
+}

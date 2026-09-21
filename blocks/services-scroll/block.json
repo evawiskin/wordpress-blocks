@@ -1,0 +1,38 @@
+{
+    "name": "hiyield/services-scroll",
+    "title": "Services Scroller block",
+    "description": "List services with child ones",
+    "style": "",
+    "script": "",
+    "category": "custom-content",
+    "icon": "admin-generic",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "services-scroll.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

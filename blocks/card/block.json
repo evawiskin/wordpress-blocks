@@ -1,0 +1,31 @@
+{
+    "name": "hiyield/card",
+    "title": "Card",
+    "description": "Create a card component consisting of an image, title and text",
+    "category": "custom-layout",
+    "parent": [ "hiyield/column2" ],
+    "icon": "columns",
+    "apiVersion": 2,
+    "keywords": [ "card" ],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "card.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "name": "hiyield/work-detail",
+    "title": "Work Detail Block",
+    "description": "The Work Detail block displays key information about the project.",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "layout",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "work-detail.php",
+        "postTypes": [
+			"work"
+		]
+    },
+    "styles": [],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

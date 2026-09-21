@@ -1,0 +1,43 @@
+{
+    "key": "block_video",
+    "title": "Video",
+    "fields": [
+		{
+			"key": "block_video_file_key",
+			"name": "block_video_file",
+			"type": "url",
+			"label": "Upload a Video"
+		},
+        {
+			"key": "block_video_cover_video_key",
+			"name": "block_video_cover_video",
+			"type": "url",
+			"label": "Upload a Cover Video"
+		},
+        {
+            "key": "block_video_cover_image_key",
+            "name": "block_video_cover_image",
+            "type": "image",
+            "return_format": "array",
+            "label": "Upload a Cover Image"
+        }
+	],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/video"
+            }
+        ]
+    ],
+	"menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

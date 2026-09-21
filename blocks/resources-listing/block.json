@@ -1,0 +1,50 @@
+{
+    "name": "hiyield/resources-listing",
+    "title": "Resources Listing",
+    "description": "Queries and displays all Resource CPT entries with gated download modals.",
+    "category": "custom-layout",
+    "icon": "media-document",
+    "apiVersion": 2,
+    "keywords": ["resources", "downloads", "gated"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "resources-listing.php"
+    },
+    "styles": [],
+    "supports": {
+        "anchor": true,
+        "align": false,
+        "color": {
+            "text": false,
+            "background": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "attributes": {
+        "backgroundColor": {
+            "type": "string",
+            "default": "gretter-50"
+        },
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "padding": {
+                        "top": "var:preset|spacing|96px",
+                        "bottom": "var:preset|spacing|96px"
+                    }
+                }
+            }
+        }
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

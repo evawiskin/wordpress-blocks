@@ -1,0 +1,32 @@
+{
+    "name": "hiyield/feature-icon-animation",
+    "title": "Feature Icon Animation",
+    "description": "Add a split layout section with one side containing rotating cogs and the other containing text and a call-to-action",
+    "category": "custom-layout",
+    "icon": "star-filled",
+    "apiVersion": 2,
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "feature-icon-animation.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

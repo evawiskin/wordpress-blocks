@@ -1,0 +1,123 @@
+{
+    "key": "block_columns",
+    "title": "Columns Block",
+    "fields": [
+        {
+            "key": "block_columns_spacing_key",
+            "label": "Block Spacing",
+            "name": "block_columns_spacing",
+            "type": "select",
+            "choices": {
+                "sm": "Small",
+                "md": "Medium",
+                "lg": "Large",
+                "xl": "Extra Large"
+            },
+            "default_value": "lg",
+            "return_format": "value",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "block_columns_heading_key",
+            "name": "block_columns_heading",
+            "label": "Block Heading",
+            "type": "text",
+            "instructions": "Optional, Leave empty to hide"
+        },
+        {
+            "key": "block_columns_margin_key",
+            "label": "Add A Gap Around The Block?",
+            "name": "block_columns_margin",
+            "instructions": "Only visible if block has background colour or image",
+            "type": "true_false",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No",
+            "default_value": 0
+        },
+        {
+            "key": "block_columns_count_key",
+            "name": "block_columns_count",
+            "label": "Columns",
+            "type": "select",
+            "choices": {
+                "2": "Two Columns",
+                "3": "Three Columns",
+                "4": "Four Columns"
+            },
+            "default_value": "2",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "block_columns_gap_key",
+            "name": "block_columns_gap",
+            "label": "Column Gap",
+            "type": "select",
+            "choices": {
+                "sm": "Small",
+                "md": "Medium",
+                "lg": "Large",
+                "xl": "Extra Large"
+            },
+            "default_value": "md",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "block_columns_align_items_key",
+            "name": "block_columns_align_items",
+            "label": "Align Items",
+            "type": "select",
+            "choices": {
+                "flex-start": "Top",
+                "center": "Center",
+                "flex-end": "Bottom"
+            },
+            "default_value": "center",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "block_columns_background_image_key",
+            "label": "Background Image",
+            "name": "block_columns_background_image",
+            "type": "image",
+			"return_format": "id"
+        },
+        {
+            "key": "block_columns_add_background_image_filter_key",
+            "label": "Add Background Image Filter",
+            "name": "block_columns_add_background_image_filter",
+            "type": "true_false",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No",
+            "default_value": 0,
+            "instructions": "The filter uses the set background colour"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/columns"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

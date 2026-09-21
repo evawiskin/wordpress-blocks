@@ -1,0 +1,44 @@
+{
+    "name": "hiyield/trending-articles",
+    "title": "Trending Articles Block",
+    "description": "This block displays a list of trending article thumbnails in a grid layout.",
+    "category": "custom-layout",
+    "icon": "chart-line",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "trending-articles.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "padding": {
+                        "top": "var:preset|spacing|md",
+                        "bottom": "var:preset|spacing|md"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "key": "block_container_key",
+    "title": "Container Block",
+    "fields": [
+        {
+            "key": "block_container_spacing_key",
+            "label": "Block Spacing",
+            "name": "block_container_spacing",
+            "type": "select",
+            "choices": {
+                "sm": "Small",
+                "md": "Medium",
+                "lg": "Large",
+                "xl": "Extra Large"
+            },
+            "default_value": "lg",
+            "return_format": "value",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "block_container_background_image_key",
+            "label": "Background Image",
+            "name": "block_container_background_image",
+            "type": "image",
+			"return_format": "id"
+        },
+        {
+            "key": "block_container_background_has_mobile_image_key",
+            "label": "Use Different Image For Mobile?",
+            "name": "block_container_background_has_mobile_image",
+            "type": "true_false",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No",
+            "default_value": 0
+        },
+        {
+            "key": "block_container_background_mobile_image_key",
+            "label": "Mobile Background Image",
+            "name": "block_container_background_mobile_image",
+            "type": "image",
+            "return_format": "id",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "container_background_has_mobile_image_key",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "block_container_add_background_image_filter_key",
+            "label": "Add Background Image Filter",
+            "name": "block_container_add_background_image_filter",
+            "type": "true_false",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No",
+            "default_value": 0,
+            "instructions": "The filter uses the set background colour"
+        },
+        {
+            "key": "block_container_add_max_width_to_paragraphs_key",
+            "label": "Add Max Width To Paragraphs?",
+            "name": "block_container_add_max_width_to_paragraphs",
+            "instructions": "Will reduce the amount of words per line on paragraphs, useful when centering text",
+            "type": "true_false",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No",
+            "default_value": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/container"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

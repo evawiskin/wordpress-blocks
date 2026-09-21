@@ -1,0 +1,30 @@
+{
+    "name": "hiyield/featured-image",
+    "title": "Featured Image",
+    "description": "The featured image block displays a single image with an optional caption.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "apiVersion": 2,
+    "keywords": ["featured", "image"],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "featured-image.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    }
+}

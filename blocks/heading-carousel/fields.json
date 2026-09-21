@@ -1,0 +1,49 @@
+{
+    "key": "block_heading_carousel_key",
+    "title": "Heading Carousel Block",
+    "fields": [
+        {
+            "key": "block_heading_carousel_append_key",
+            "label": "Heading Carousel Append or Prepend?",
+            "name": "block_heading_carousel_append",
+            "type": "true_false",
+            "instructions": "Choose if the carousel appends or prepends the default heading",
+            "ui": 1,
+            "ui_on_text": "Append",
+            "ui_off_text": "Prepend"
+        },
+        {
+            "key": "block_heading_carousel_items_key",
+            "label": "Heading Carousel Items",
+            "name": "heading_carousel_items",
+            "type": "repeater",
+            "instructions": "Add heading items, the first item will be the default heading",
+            "sub_fields": [
+                {
+                    "key": "block_heading_carousel_item_key",
+                    "label": "Heading Carousel Item",
+                    "name": "heading_carousel_item",
+                    "type": "text"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/heading-carousel"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

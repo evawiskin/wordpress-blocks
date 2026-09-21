@@ -1,0 +1,62 @@
+{	
+	"$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/main/json/block.json",
+	"name": "hiyield/image-content",
+	"title": "Image Content",
+	"description": "The Image Content block is effectively a 2 column layout, with an image on one side and content on the other.",
+	"category": "image-layout",
+	"icon": "align-pull-right",
+	"apiVersion": 2,
+	"keywords": [],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "image-content.php"
+	},
+	"styles": [],
+	"supports": {
+		"align": false,
+		"anchor": true,
+		"alignContent": true,
+		"color": {
+				"text": true,
+				"background": true,
+				"link": false
+		},
+		"spacing": {
+            "padding": true,
+            "margin": true,
+            "blockGap": true,
+            "defaultControls": {
+                "padding": true,
+                "margin": true,
+                "blockGap": false
+            }
+        },
+		"alignText": true,
+		"fullHeight": false,
+		"jsx": true
+	},
+	"providesContext": {
+		"acf/fields": "data"
+	},
+	"attributes": {
+        "style": {
+			"type": "object",
+			"default": {
+				"spacing": {
+					"margin": {
+						"top": "var:preset|spacing|3xl",
+						"bottom": "var:preset|spacing|3xl"
+					}
+				},
+				"alignContent": "center"
+			}
+		}
+    },
+	"example": {
+        "attributes": {
+            "data": {
+                "preview": true
+            }
+        }
+    }
+}

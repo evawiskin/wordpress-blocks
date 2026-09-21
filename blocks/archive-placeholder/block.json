@@ -1,0 +1,32 @@
+{
+    "name": "hiyield/archive-placeholder",
+    "title": "Archive Placeholder",
+    "description": "On archive pages this block will be replaced with the archive content.",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "book",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "archive-placeholder.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "alignContent": false,
+        "color": {
+            "text": false,
+            "background": false,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    },
+    "example": {}
+}

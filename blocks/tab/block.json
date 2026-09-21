@@ -1,0 +1,31 @@
+{
+    "name": "hiyield/tab",
+    "parent": [ "hiyield/tabs" ],
+    "title": "Tab",
+    "description": "A block that creates tab in Tabs block",
+    "style": "",
+    "script": "",
+    "category": "design",
+    "icon": "admin-page",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "tab.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "alignContent": false,
+        "color": {
+            "text": false,
+            "background": false,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {}
+}

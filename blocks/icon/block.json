@@ -1,0 +1,46 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/main/json/block.json",
+    "name": "hiyield/icon",
+    "title": "Icon",
+    "description": "Add an SVG icon from icon library.",
+    "style": "",
+    "script": "",
+    "category": "media",
+    "icon": "smiley",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "icon.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true,
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "margin": {
+                        "bottom": "var:preset|spacing|1"
+                    }
+                }
+            }
+        }
+    }
+}

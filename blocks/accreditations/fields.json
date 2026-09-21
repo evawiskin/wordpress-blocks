@@ -1,0 +1,75 @@
+{
+    "key": "accreditations",
+    "title": "Accreditations",
+    "fields": [
+        {
+            "key": "block_accreditations_wrapped_layout_key",
+            "name": "block_accreditations_wrapped_layout",
+            "label": "Wrapped Layout",
+            "type": "true_false",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No",
+            "instructions": "Wrap the heading and paragraph text alongside each other with the accreditations below."
+        },
+        {
+            "key": "block_accreditations_handpick_accreditations_key",
+            "label": "Handpick Accreditations",
+            "name": "block_accreditations_handpick_accreditations",
+            "type": "true_false",
+            "ui": 1,
+            "instructions": "Check this field to hand-pick accreditations. Leave unchecked to default to using all published accrediations."
+        },
+        {
+            "key": "block_accreditations_accreditation_posts_key",
+            "label": "Choose Accreditations",
+            "name": "block_accreditations_accreditation_posts",
+            "type": "post_object",
+            "post_type": "accreditation",
+            "multiple": 1,
+            "return_format": "post_id",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_accreditations_handpick_accreditations_key",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "block_accreditations_variation_key",
+            "label": "Variation",
+            "name": "block_accreditations_variation",
+            "type": "select",
+            "choices": {
+                "fusion-card": "Fusion Card",
+                "hover-card": "Hover Card",
+                "hero-card": "Hero Card"
+            },
+            "default_value": "hover-card"
+        },
+        {
+            "key": "block_accreditations_slides_per_view_key",
+            "label": "Slides Per View",
+            "name": "block_accreditations_slides_per_view",
+            "type": "number",
+            "default_value": 4,
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "instructions": "Number of accreditation slides to show at once on desktop screens."
+        }
+    
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/accreditations"
+            }
+        ]
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "key": "block_clients_key",
+    "title": "Clients Block",
+    "fields": [
+        {
+            "key": "block_clients_select_mode_key",
+            "label": "Selection Mode",
+            "name": "block_clients_select_mode",
+            "instructions": "Choose how you want to add client images. You can either freely select images from the media library or use images assigned to terms of the \"Client\" taxonomy (if available) from a Clients select field.",
+            "ui": true,
+            "ui_on_text": "Select from terms",
+            "ui_off_text": "Free select",
+            "type": "true_false"
+        },
+        {
+            "key": "block_clients_repeater_key",
+            "label": "Images",
+            "name": "block_clients_repeater",
+            "aria-label": "",
+            "type": "repeater",
+            "button_label": "Add Image",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "block_clients_repeater_image_key",
+                    "label": "Image",
+                    "name": "block_clients_repeater_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id"
+                }
+            ],
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_clients_select_mode_key",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "block_clients_terms_key",
+            "label": "Client Terms",
+            "name": "block_clients_terms",
+            "instructions": "Select the Client terms to pull images from.",
+            "type": "taxonomy",
+            "taxonomy": "client",
+            "field_type": "multi_select",
+            "add_term": 0,
+            "load_save_terms": 0,
+            "return_format": "id",
+            "multiple": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_clients_select_mode_key",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/clients"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

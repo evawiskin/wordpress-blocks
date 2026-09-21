@@ -1,0 +1,52 @@
+{
+    "key": "block_services_scroll_key",
+    "title": "Services block",
+    "fields": [
+        {
+            "key": "block_services_scroll_repeater_key",
+            "label": "Parent services",
+            "name": "block_services_scroll_repeater",
+            "type": "repeater",
+            "layout": "block",
+            "instructions": "Select which parent services you want to show in this block (up to 3)",
+            "button_label": "Add Service",
+            "min": 0,
+            "max": 3,
+            "sub_fields": [
+                {
+                    "key": "block_services_scroll_accordion_key",
+                    "name": "block_services_scroll_accordion",
+                    "type": "accordion",
+                    "label": "Service"
+                },
+                {
+                    "key": "block_services_scroll_parent_service_key",
+                    "label": "Select service",
+                    "name": "block_services_scroll_parent_service",
+                    "aria-label": "",
+                    "type": "select",
+                    "choices": [],
+                    "instructions": "Select card background color"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/services-scroll"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

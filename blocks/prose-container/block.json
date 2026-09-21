@@ -1,0 +1,38 @@
+{
+    "name": "hiyield/prose-container",
+    "title": "Prose Container",
+    "description": "A block that contains content to a maximum width of 800px and centers it on the page. Ideal for long-form textual content.",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "text",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "prose-container.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

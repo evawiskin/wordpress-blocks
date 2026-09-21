@@ -1,0 +1,49 @@
+{
+    "name": "hiyield/tile",
+    "title": "Tile",
+    "description": "",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "parent": [ "hiyield/column2" ],
+    "icon": "columns",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "tile.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": true,
+        "color": {
+            "text": true,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "alignText": true,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "padding": {
+                        "top": "var:preset|spacing|16px",
+                        "bottom": "var:preset|spacing|16px",
+                        "left": "var:preset|spacing|16px",
+                        "right": "var:preset|spacing|16px"
+                    }
+                }
+            }
+        }
+    }
+}

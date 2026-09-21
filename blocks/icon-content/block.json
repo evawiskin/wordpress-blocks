@@ -1,0 +1,60 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/main/json/block.json",
+    "name": "hiyield/icon-content",
+    "title": "Icon Content",
+    "description": "The icon content block allows you to create a content block with an icon inline with either a paragraph or heading.",
+    "style": "",
+    "script": "",
+    "category": "custom-layout",
+    "icon": "heading",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "icon-content.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": true,
+        "alignContent": false,
+        "alignText": false,
+        "anchor": true,
+        "color": {
+            "background": true,
+            "link": false,
+            "text": true
+        },
+        "fullHeight": false,
+        "jsx": true,
+        "mode": false,
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "margin": {
+                        "top": "0",
+                        "bottom": "var:preset|spacing|sm"
+                    },
+                    "padding": {
+                        "top": "0",
+                        "bottom": "0"
+                    }
+                }
+            }
+        },
+        "template": { "type": "array", "default": [] }
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "preview": true
+            }
+        }
+    }
+}

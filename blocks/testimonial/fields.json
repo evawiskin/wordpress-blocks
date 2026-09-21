@@ -1,0 +1,64 @@
+{
+    "key": "block_testimonial",
+    "title": "Testimonial",
+    "fields": [
+		{
+			"key" : "block_testimonial_testimonial_select_key",
+			"name" : "block_testimonial_testimonial_select",
+			"label": "Select Testimonial",
+			"type": "post_object",
+			"post_type": "testimonial",
+			"return_format": "id"
+		},
+		{
+			"key" : "block_testimonial_spacing_key",
+			"name" : "block_testimonial_spacing",
+			"label": "Add Block Spacing?",
+			"type": "true_false",
+			"ui": true,
+			"wrapper": {
+				"width": "25"
+			}
+		},
+		{
+			"key" : "block_testimonial_show_border_key",
+			"name" : "block_testimonial_show_border",
+			"label": "Show border?",
+			"type": "true_false",
+			"ui": true,
+			"wrapper": {
+				"width": "25"
+			}
+		},
+		{
+			"key" : "block_testimonial_show_avatar_key",
+			"name" : "block_testimonial_show_avatar",
+			"label": "Show avatar?",
+			"type": "true_false",
+			"ui": true,
+			"wrapper": {
+				"width": "25"
+			}
+		},
+		{
+			"key": "block_testimonial_author_text_color_key",
+			"label": "Author name / job color",
+			"name": "block_testimonial_author_text_color",
+			"aria-label": "",
+			"type": "select",
+			"choices": [],
+			"wrapper": {
+				"width": "25"
+			}
+		}
+	],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/testimonial"
+            }
+        ]
+    ]
+}

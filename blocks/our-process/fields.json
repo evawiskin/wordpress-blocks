@@ -1,0 +1,97 @@
+{
+    "key": "block_our_process",
+    "title": "Our process fields",
+    "fields": [
+        {
+            "key": "block_our_process_override_key",
+            "name": "block_our_process_override",
+            "label": "Override global 'Our process' from settings?",
+            "type": "true_false",
+            "default_value": 1,
+            "ui": 1,
+            "instructions": ""
+        },
+        {
+            "key": "block_our_process_repeater_key",
+            "label": "Processes",
+            "name": "block_our_process_repeater",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add process",
+            "wrapper": {
+                "width": "100"
+            },
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_our_process_override_key",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+					"key": "block_our_process_repeater_accordion_key",
+					"name": "block_our_process_repeater_accordion",
+					"type": "accordion",
+					"label": "Process"
+				},
+                {
+                    "key": "block_our_process_repeater_color_key",
+                    "label": "Lead color",
+                    "name": "block_our_process_repeater_color",
+                    "aria-label": "",
+                    "type": "select",
+                    "choices": [],
+                    "instructions": "Select lead color which we use in the card",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "block_our_process_repeater_icon_key",
+                    "label": "Icon",
+                    "name": "block_our_process_repeater_icon",
+                    "aria-label": "",
+                    "type": "select",
+                    "choices": [],
+                    "instructions": "Select icon which we use in the card",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "block_our_process_repeater_heading_key",
+                    "label": "Heading",
+                    "name": "block_our_process_repeater_heading",
+                    "type": "text"
+                },
+                {
+                    "key": "block_our_process_repeater_desc_key",
+                    "label": "Description",
+                    "name": "block_our_process_repeater_desc",
+                    "type": "textarea"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/our-process"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

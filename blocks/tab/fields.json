@@ -1,0 +1,30 @@
+{
+    "key": "block_tab",
+    "title": "Tab",
+    "fields": [
+        {
+            "key": "block_tab_label_key",
+            "label": "Tab Label",
+            "name": "block_tab_label",
+            "type": "text"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/tab"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

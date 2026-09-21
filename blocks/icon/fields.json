@@ -1,0 +1,63 @@
+{
+    "key": "block_icon",
+    "title": "Icon",
+    "fields": [
+       {
+            "key": "block_icon_icon_select_key",
+            "name": "block_icon_icon_select",
+            "label": "Choose an icon, the icon will be previewed below.",
+            "type": "select",
+            "instructions": "Select an icon",
+            "default_value": "asterisk.svg",
+            "wrapper": {
+                "class": "acf-svg-preview"
+            }
+       },
+       {
+            "key": "block_icon_icon_size_key",
+            "name": "block_icon_icon_size",
+            "label": "Icon Size",
+            "type": "select",
+            "instructions": "Select the icon size.",
+            "choices": {
+                "size-4": "Size 4 (16px)",
+                "size-5": "Size 5 (20px)",
+                "size-6": "Size 6 (24px)",
+                "size-7": "Size 7 (28px)",
+                "size-8": "Size 8 (32px)",
+                "size-10": "Size 10 (40px)",
+                "size-12": "Size 12 (48px)",
+                "size-16": "Size 16 (64px)",
+                "size-20": "Size 20 (80px)",
+                "size-24": "Size 24 (96px)"
+            },
+            "default_value": "size-8"
+       },
+       {
+        "key": "block_icon_show_border_key",
+        "name": "block_icon_show_border",
+        "label": "Show Border",
+        "type": "true_false",
+        "ui": 1,
+        "instructions": "Enable to show a border around the icon."
+       }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/icon"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

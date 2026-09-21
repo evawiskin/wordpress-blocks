@@ -1,0 +1,42 @@
+{
+    "key": "block_job_listing",
+    "title": "Job Vacancies Block",
+    "fields": [
+        {
+            "key": "block_job_listing_select_key",
+            "name": "block_job_listing_select",
+            "label": "Job Vacancies Select",
+            "type": "post_object",
+			"instructions": "Select which job vacancies to display, if left blank, all job listings will be displayed.",
+            "post_type": ["job"],
+            "return_format": "",
+            "multiple": true
+        },
+        {
+            "key": "block_job_listing_no_vacancies_text_key",
+            "name": "block_job_listing_no_vacancies_text",
+            "label": "No Vacancies Text",
+            "type": "textarea",
+            "rows": 4,
+            "new_lines": "wpautop"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/job-table"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

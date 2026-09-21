@@ -1,0 +1,43 @@
+{
+    "key": "block_steps",
+    "title": "Steps",
+    "fields": [
+        {
+            "key": "block_steps_spacing_key",
+            "label": "Block Spacing",
+            "name": "block_steps_spacing",
+            "type": "select",
+            "choices": {
+                "none": "None",
+                "sm": "Small - 8px / 16px",
+                "md": "Medium - 16px / 32px",
+                "lg": "Large - 24px / 48px",
+                "xl": "xl - 48px / 96px",
+                "2xl": "2xl - 56px / 112px"
+            },
+            "default_value": "xl",
+            "return_format": "value",
+            "wrapper": {
+                "width": "50"
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/steps"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

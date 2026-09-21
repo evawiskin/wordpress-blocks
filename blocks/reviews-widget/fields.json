@@ -1,0 +1,88 @@
+{
+    "key": "block_review_widget_key",
+    "title": "Reviews Widget Block",
+    "fields": [
+        {
+            "key": "block_review_widget_code_key",
+            "label": "Widget Code",
+            "name": "block_review_widget_code",
+            "type": "textarea"
+        },
+        {
+            "key": "block_review_widget_use_fallback_key",
+            "label": "Use Fallback",
+            "name": "block_review_widget_use_fallback",
+            "type": "true_false",
+            "instructions": "Use a static widget/image instead of the widget code",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "block_review_widget_fallback_key",
+            "label": "Static Fallback",
+            "name": "block_review_widget_fallback",
+            "type": "select",
+            "instructions": "Select a static widget/image to use",
+            "return_format": "value",
+            "choices": {
+                "clutch": "Clutch",
+                "image": "Other (Upload Image)"
+            },
+            "conditional_logic" : [
+                {
+                    "field": "block_review_widget_use_fallback_key",
+                    "operator": "==",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "key": "block_review_widget_fallback_link_key",
+            "label": "Fallback Link",
+            "name": "block_review_widget_fallback_link",
+            "type": "url",
+            "conditional_logic" : [
+                {
+                    "field": "block_review_widget_use_fallback_key",
+                    "operator": "==",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "key": "block_review_widget_fallback_image_key",
+            "label": "Fallback Image",
+            "name": "block_review_widget_fallback_image",
+            "type": "image",
+            "return_format": "id",
+            "conditional_logic" : [
+                {
+                    "field": "block_review_widget_fallback_key",
+                    "operator": "==",
+                    "value": "image"
+                }
+            ]
+        }
+
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/review-widget"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

@@ -1,0 +1,38 @@
+{
+    "name": "hiyield/buttons",
+    "title": "Buttons",
+    "description": "Add a single button or group of buttons.",
+    "category": "text",
+    "icon": "button",
+    "apiVersion": 2,
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "buttons.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": false,
+        "alignContent": false,
+        "color": {
+            "text": false,
+            "background": false,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    },
+    "attributes": {
+    }
+}

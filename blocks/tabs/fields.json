@@ -1,0 +1,57 @@
+{
+    "key": "block_tabs",
+    "title": "Tabs",
+    "fields": [
+        {
+            "key": "block_tabs_heading_key",
+            "name": "block_tabs_heading",
+            "label": "Section Heading",
+            "type": "text",
+            "instructions": "Optional, Leave empty to hide"
+        },
+        {
+            "key": "block_tabs_layout_key",
+            "label": "Layout",
+            "name": "block_tabs_layout",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "show": "Show all tabs, scroll to active",
+                "hide": "Hide all tabs, Show only active"
+            },
+            "default_value": "show",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/tabs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

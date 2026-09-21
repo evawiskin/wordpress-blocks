@@ -1,0 +1,38 @@
+{
+    "name": "hiyield/custom-heading",
+    "title": "Custom Heading",
+    "description": "A heading with options to an icon or asterisk",
+    "style": "",
+    "script": "",
+    "category": "text",
+    "icon": "heading",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+		"renderTemplate": "custom-heading.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "alignContent": false,
+        "color": {
+            "text": false,
+            "background": false,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false,
+		"jsx": true
+    },
+    "attributes": {
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "is_preview": true
+            }
+        }
+    }
+}

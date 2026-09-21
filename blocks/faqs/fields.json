@@ -1,0 +1,96 @@
+{
+    "key": "block_faqs_key",
+    "title": "FAQ Block",
+    "fields": [
+        {
+            "key": "block_faqs_faqs_to_show_key",
+            "label": "Show FAQs by:",
+            "name": "block_faqs_faqs_to_show",
+            "type": "radio",
+            "choices": {
+                "all":      "All",
+                "subject":  "Subject",
+                "custom":   "Custom"
+            },
+            "default_value": "all",
+            "return_format": "value",
+            "other_choice": 0,
+            "layout": "horizontal",
+            "save_other_choice": 0
+        },
+        {
+            "key": "block_faqs_select_subjects_key",
+            "label": "Select Subject(s)",
+            "name": "block_faqs_select_subjects",
+            "type": "taxonomy",
+            "taxonomy": "faq_subject",
+            "field_type": "multi_select",
+            "multiple": 1,
+            "add_term": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "block_faqs_faqs_to_show_key",
+                        "operator": "==",
+                        "value": "subject"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "block_faqs_select_faqs_key",
+            "label": "Select FAQs",
+            "name": "block_faqs_select_faqs",
+            "type": "relationship",
+            "required": 0,
+            "conditional_logic": [
+                    {
+                        "field": "block_faqs_faqs_to_show_key",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+            ],
+            "post_type": [
+                "faq"
+            ],
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "return_format": "id",
+            "min": "",
+            "max": "",
+            "elements": ""
+        },
+        {
+            "key": "block_faqs_use_two_col_layout_key",
+            "label": "Use Two Column Layout",
+            "name": "block_faqs_use_two_col_layout",
+            "type": "true_false",
+            "instructions": "Enable to display content and FAQs in a two-column layout. Disable to stack vertically.",
+            "required": 0,
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "hiyield\/faqs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}
